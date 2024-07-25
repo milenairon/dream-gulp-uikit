@@ -1,0 +1,12 @@
+{
+  "name": "dream-gulp-uikit",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "gulp",
+    "build": "gulp build --build"
+  },
+  "author": "",
+  "license": "ISC"
+}
