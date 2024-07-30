@@ -1,27 +1,28 @@
 <!DOCTYPE html>
-    <html lang="ru">
-    @@include('html/head.html', {
-        'title': 'Жилой комплекс «Мечта» | Купить квартиру в новостройке в Новосибирске'
-    })
-    <body>
-        @@include('html/ExHeader.html', {})
-        <!-- @@include('html/ExCookie.html', {}) -->
+<html lang="ru">
+  @@include('html/head.html', { 'title': 'Жилой комплекс «Мечта» | Купить квартиру в новостройке в Новосибирске' })
+  <body>
+    @@include('html/ExHeader.html', {})
+    <!-- @@include('html/ExCookie.html', {}) -->
 
-        <main class="main">
-            @@include('html/ExSlider.html', {})            
-            @@include('html/ExLayout.html', {})
-            @@include('html/ExExamples.html', {})
-            @@include('html/ExAdvantages.html', {})
-            @@include('html/ExGallery.html', {})
-            @@include('html/ExInfrastructure.html', {})
-            @@include('html/ExCityCommunications.html', {})
-            @@include('html/ExPresentation.html', {})
-            @@include('html/ExContacts.html', {})
-            @@include('html/ExPurchase.html', {})
-            @@include('html/ExQuestions.html', {})
-        </main>
+    <main class="main">
+      <span>привет-привет</span>
+      <!-- <img src ="@images/header/logo.png" /> -->
+      @@include('html/ExSlider.html', {}) 
+      @@include('html/ExLayout.html', {}) 
+      @@include('html/ExExamples.html', {})  
+      @@include('html/ExAdvantages.html', {}) 
+      @@include('html/ExGallery.html', {})
+      @@include('html/ExInfrastructure.html', {})
+      @@include('html/ExCityCommunications.html', {})
+      @@include('html/ExPresentation.html', {})
+      @@include('html/ExContacts.html', {}) 
+      @@include('html/ExPurchase.html', {}) 
+      @@include('html/ExQuestions.html', {})
+    </main>
+    @@include('html/ExFooter.html', {}) 
+    @@include('html/script.html', {})
 
-        @@include('html/ExFooter.html', {})
-        @@include('html/script.html', {})
-    </body>
-</html> 
+  </body>
+  
+</html>

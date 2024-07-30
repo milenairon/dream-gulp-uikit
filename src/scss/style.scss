@@ -1,7 +1,7 @@
 // @use 'sass:math';
 
-// /** Подключение шрифтов локально из папки "./src/fonts" */
-// @import 'config/fonts';
+// Подключение шрифтов локально из папки "./src/fonts" */
+@import "config/fonts";
 
 // /** Подключение переменных */
 // @import 'config/vars';
@@ -27,3 +27,33 @@
 // @import 'components/ExAccordion';
 // @import 'components/ExCookie';
 // @import 'components/ExPopups';
+
+// @import "./node_modules/swiper/swiper-bundle";
+
+main {
+  padding: 0;
+  // background-color: rgba(91, 239, 118, 0.453);
+  span {
+    color: red;
+  }
+}
+.header {
+  font-family: "TTNorms", Arial, Helvetica, sans-serif;
+  font-weight: 700;
+}
+.inner {
+  font-family: "TTNorms", Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  color: blue;
+  background-image: url("@images/header/logo.svg");
+}
+
+body {
+  background-color: aqua;
+}
+
+@media (max-width: 640px) {
+  body {
+    background-color: rgb(47, 0, 255);
+  }
+}
