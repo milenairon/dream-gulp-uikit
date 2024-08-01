@@ -18,42 +18,32 @@
 // @import 'config/common';
 
 // /** Подключение стилей отдельных блоков и секций */
-// @import 'components/ExHeader';
-// @import 'components/ExBurger';
-// @import 'components/ExBurger-menu';
-// @import 'components/ExFooter';
-// @import 'components/ExCentered-gallery';
-// @import 'components/ExGallery';
-// @import 'components/ExAccordion';
-// @import 'components/ExCookie';
-// @import 'components/ExPopups';
-
+@import "components/ExHeader.scss";
+@import "components/ExNavigation.scss";
+@import "components/ExSlider.scss";
+@import "components/ExLayout.scss";
+@import "components/ExExamples.scss";
+@import "components/ExAdvantages.scss";
+@import "components/ExGallery.scss";
+@import "components/ExInfrastructure.scss";
+@import "components/ExCityCommunications.scss";
+@import "components/ExPresentation.scss";
+@import "components/ExContacts.scss";
+@import "components/ExPurchase.scss";
+@import "components/ExQuestions.scss";
+@import "components/ExFooter.scss";
 // @import "./node_modules/swiper/swiper-bundle";
 
 main {
-  padding: 0;
-  // background-color: rgba(91, 239, 118, 0.453);
-  span {
-    color: red;
-  }
-}
-.header {
-  font-family: "TTNorms", Arial, Helvetica, sans-serif;
-  font-weight: 700;
-}
-.inner {
-  font-family: "TTNorms", Arial, Helvetica, sans-serif;
-  font-weight: 400;
-  color: blue;
-  background-image: url("@images/header/logo.svg");
+  padding: 102px;
 }
 
 body {
-  background-color: aqua;
+  margin: 0 auto;
 }
 
 @media (max-width: 640px) {
   body {
-    background-color: rgb(47, 0, 255);
+    // background-color: rgb(47, 0, 255);
   }
 }

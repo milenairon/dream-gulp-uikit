@@ -1,3 +1,151 @@
-<section class="slider">
-    
-</section>
+<div class="slider" uk-slider>
+  <!-- uk-light - Чтобы адаптировать содержимое для лучшей видимости на каждом изображении -->
+  <!-- uk-visible-toggle -  -->
+  <div
+    class="slider__container uk-position-relative uk-visible-toggle uk-light"
+    tabindex="-1"
+  >
+    <!-- uk-child-width-1-1 -  -->
+    <!-- uk-child-width-1-1@s - количество слайдов на странице -->
+    <!-- uk-child-width-1-4@m -  -->
+    <ul
+      class="slider__items uk-slider-items uk-child-width-1-1 uk-child-width-1-1@s uk-child-width-2-4@m"
+    >
+      <li
+        class="slider__item slider__item_page_main uk-slider-item"
+        style="background-image: url(@images/slider/1.jpg)"
+      >
+        <h2 class="slider__title">«Правильная ипотека» от Совкомбанка</h2>
+        <p class="slider__text">
+          Квартиры от 4,5 млн. ₽ 20% первый взнос. <br />Ставка актуальна до
+          конца строительства
+        </p>
+        <button
+          class="slider__button"
+          type="button"
+          aria-label="Записаться на консультацию"
+        >
+          Записаться на консультацию
+        </button>
+      </li>
+      <li
+        class="slider__item uk-slider-item"
+        style="background-image: url(@images/slider/slider-image-2.webp)"
+      >
+        <h2 class="slider__title">
+          Квартиры от 25 000 ₽/мес. <br />в ЖК «Мечта»
+        </h2>
+        <p class="slider__text">Горячее предложение!</p>
+        <button
+          class="slider__button"
+          type="button"
+          aria-label="Записаться на консультацию"
+        >
+          Записаться на консультацию
+        </button>
+      </li>
+      <li
+        class="slider__item uk-slider-item"
+        style="background-image: url(@images/slider/slider-image-3.webp)"
+      >
+        <h2 class="slider__title">
+          Квартиры без ежемесячных платежей в <br />Новосибирске
+        </h2>
+        <p class="slider__text">Отсрочка от застройщика!</p>
+        <button
+          class="slider__button"
+          type="button"
+          aria-label="Записаться на консультацию"
+        >
+          Записаться на консультацию
+        </button>
+      </li>
+      <li
+        class="slider__item uk-slider-item"
+        style="background-image: url(@images/slider/slider-image-4.webp)"
+      >
+        <h2 class="slider__title">
+          Квартиры отсрочкой платежа в ЖК <br />«Мечта»!
+        </h2>
+        <button
+          class="slider__button"
+          type="button"
+          aria-label="Записаться на консультацию"
+        >
+          Записаться на консультацию
+        </button>
+      </li>
+      <li
+        class="slider__item uk-slider-item"
+        style="background-image: url(@images/slider/slider-image-5.webp)"
+      >
+        <h2 class="slider__title">Без первого взноса</h2>
+        <p class="slider__text">
+          Покупка квартиры от застройщика <br />без вложения собственных средств
+        </p>
+        <button
+          class="slider__button"
+          type="button"
+          aria-label="Записаться на консультацию"
+        >
+          Записаться на консультацию
+        </button>
+      </li>
+      <li
+        class="slider__item uk-slider-item"
+        style="background-image: url(@images/slider/slider-image-6.webp)"
+      >
+        <h2 class="slider__title">
+          Дарим путешествие <br />за покупку квартиры
+        </h2>
+        <p class="slider__text">Акция продлена до 31.07.24</p>
+        <div class="slider__box-button">
+          <button
+            class="slider__button slider__button_color_not-main"
+            type="button"
+            aria-label="Узнать подробнее"
+          >
+            Узнать подробнее
+          </button>
+          <button
+            class="slider__button"
+            type="button"
+            aria-label="Записаться на консультацию"
+          >
+            Записаться на консультацию
+          </button>
+        </div>
+      </li>
+      <li
+        class="slider__item uk-slider-item"
+        style="background-image: url(@images/slider/slider-image-7.webp)"
+      >
+        <h2 class="slider__title">Старт продаж</h2>
+        <p class="slider__text">
+          Подобрать квартиру по привлекательной <br />цене можно уже сейчас!
+        </p>
+        <button
+          class="slider__button"
+          type="button"
+          aria-label="Записаться на консультацию"
+        >
+          Записаться на консультацию
+        </button>
+      </li>
+    </ul>
+    <!-- Кнопки по бокам -->
+    <!-- uk-position-center-left, uk-position-center-right -  навигация вне слайдера -->
+
+    <!--  uk-hidden-hover -->
+    <!-- uk-slider-nav uk-dotnav - навигация под слайдами -->
+    <ul
+      class="slider__nav uk-slider-nav uk-dotnav uk-flex-center uk-margin"
+    ></ul>
+  </div>
+  <a
+    class="slider__button-next uk-position-center-right uk-position-small"
+    href
+    uk-slidenav-next
+    uk-slider-item="next"
+  ></a>
+</div>

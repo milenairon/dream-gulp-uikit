@@ -61,9 +61,12 @@ const dev = gulp.series(reset, mainTasks, gulp.parallel(watcher, server)); // gu
 const build = gulp.series(reset, mainTasks);
 // const deployZIP = gulp.series(reset, mainTasks, zip);
 // const deployFTP = gulp.series(reset, mainTasks, ftp);
-const copyFaviconing = copyFavicon
+const copyFaviconing = copyFavicon;
 // Выполнение сценария по умолчанию
 gulp.task("default", dev);
 
 // Экспорт сценариев
-export { dev, build /*deployZIP, deployFTP, isBuild, isDev*/, copyFaviconing };
+export {
+  dev/*deployZIP, deployFTP, isBuild, isDev*/,
+  copyFaviconing,
+};

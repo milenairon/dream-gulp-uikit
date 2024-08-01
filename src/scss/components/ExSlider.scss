@@ -1,0 +1,105 @@
+.slider {
+  font-family: "TTNorms", Arial, Helvetica, sans-serif;
+  position: relative;
+  top: 0;
+  left: 0;
+
+  &__container {
+  }
+
+  &__items {
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    padding: 0 150px 124px;
+    border-radius: 30px;
+    height: 760px;
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+
+  &__title {
+    font-weight: 700px;
+    font-size: 64px;
+    line-height: 77px;
+    // Раскомментировать, если не использовать <br>
+    // max-width: 70%;
+  }
+
+  &__text {
+    margin-top: 9px;
+    font-weight: 400px;
+    font-size: 36px;
+    line-height: 43px;
+  }
+
+  &__slider__box-button {
+    margin-top: 36px;
+    display: flex;
+    gap: 30px;
+  }
+
+  &__button {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    color: #fff;
+    padding: 12px 24px;
+    width: fit-content;
+    background: linear-gradient(
+      to right,
+      #b8914d,
+      #dbbb85,
+      #a3844f,
+      #b8914d,
+      #dbbb85,
+      #b8914d,
+      #c9a464
+    );
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+
+    &_color_not-main {
+      background: none;
+      background-color: #fff;
+      color: #000000;
+    }
+  }
+
+  &__button-next {
+    background-image: url("@images/slider/button-leaf.svg");
+    background-position: 0px;
+    position: absolute;
+    top: calc(50% - 34px / 2);
+    right: -100px;
+    border-radius: 50%;
+    margin-right: 0;
+    transition: transform 0.5s;
+  }
+
+  &__container:hover + &__button-next {
+    transform: translate(-330px, 0);
+  }
+
+  &__nav {
+    position: absolute;
+    bottom: 30px;
+    left: 20%;
+    right: 20%;
+  }
+
+  .uk-dotnav > * > * {
+    width: 15px;
+    height: 15px;
+    border: none;
+    background-color: #fff;
+  }
+
+  .uk-light .uk-dotnav > .uk-active > * {
+    background-color: #b8914d;
+  }
+}
