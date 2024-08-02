@@ -1,5 +1,8 @@
 // @use 'sass:math';
 
+//Очистка дефолтных стилей
+@import "config/normalize";
+
 // Подключение шрифтов локально из папки "./src/fonts" */
 @import "config/fonts";
 
@@ -11,8 +14,8 @@
 // @import 'config/mixins';
 // @import 'config/keyframes';
 
-// /** Общие параметры, шаблоны(заготовки) и вспомогательные классы */
-// @import 'config/base';
+// Общие параметры, шаблоны(заготовки) и вспомогательные классы */
+@import 'config/base';
 
 // /** БЕМ блоки используемые во всё проекте */
 // @import 'config/common';
