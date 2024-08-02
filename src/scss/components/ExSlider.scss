@@ -1,10 +1,11 @@
 .slider {
   font-family: "TTNorms", Arial, Helvetica, sans-serif;
-  position: relative;
-  top: 0;
-  left: 0;
+  margin-top: 33px;
 
   &__container {
+    position: relative;
+    top: 0;
+    left: 0;
   }
 
   &__items {
