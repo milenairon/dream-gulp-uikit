@@ -22,6 +22,8 @@
 
 // /** Подключение стилей отдельных блоков и секций */
 @import "components/ExHeader.scss";
+@import "components/ExButton.scss";
+@import "components/ExLogo.scss";
 @import "components/ExNavigation.scss";
 @import "components/ExSlider.scss";
 @import "components/ExLayout.scss";
@@ -38,7 +40,7 @@
 // @import "./node_modules/swiper/swiper-bundle";
 
 main {
-  padding: 102px;
+  padding: 0 102px;
 }
 
 body {

@@ -1,0 +1,78 @@
+.header {
+  font-family: "TTNorms", Arial, Helvetica, sans-serif;
+  padding: 25px 102px 14px;
+  background: linear-gradient(to right, #dbbb85, #b8914d, #c9a464);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  // логотип и текст
+  &__logo-container {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 52px;
+  }
+
+  &__text {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18px;
+    max-width: 290px;
+    color: #ffffff;
+  }
+
+  // кнопки с месенджерами и контактами
+  &__container-contacts {
+    display: flex;
+    gap: 68px;
+  }
+
+  // список с кнопками с контактами
+  &__button-items {
+    display: flex;
+    gap: 14px;
+    align-items: center;
+  }
+
+  //li
+  &__button-item {
+  }
+
+  // кнопки с контактами
+  &__button {
+    height: 62px;
+    text-align: center;
+    border: none;
+    background-color: #ffffff;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #000000;
+  }
+
+  &__button-image {
+    margin-right: 17px;
+  }
+
+  //телефон и город
+  &__box-contacts {
+    display: flex;
+    flex-direction: column;
+    gap: 11px;
+    align-items: end;
+  }
+
+  &__phone {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 43px;
+    color: #ffffff;
+  }
+
+  &__city {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    color: #ffffff;
+  }
+}
