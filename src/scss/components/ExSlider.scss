@@ -1,6 +1,8 @@
 .slider {
   font-family: "TTNorms", Arial, Helvetica, sans-serif;
-  margin-top: 33px;
+  margin: 33px 102px 0;
+  // padding: 0 102px;
+  overflow: hidden;
 
   &__container {
     position: relative;

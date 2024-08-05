@@ -1,0 +1,20 @@
+.gallery {
+  font-family: "TTNorms", Arial, Helvetica, sans-serif;
+  margin-top: 100px;
+  padding: 286px 70px 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+  background-image: url("@images/gallery/background.webp");
+  background-repeat: no-repeat;
+  border-radius: 30px;
+
+  &__text {
+    font-weight: 400;
+    text-align: center;
+    font-size: 36px;
+    line-height: 43px;
+    color: #ffffff;
+  }
+}
