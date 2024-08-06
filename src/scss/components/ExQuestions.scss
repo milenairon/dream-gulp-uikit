@@ -5,6 +5,8 @@
   }
 
   &__title {
+    font-size: 4rem;
+    font-weight: bold;
   }
 
   &__items {
@@ -15,10 +17,13 @@
   }
 
   &__item-title {
-    color: #474A51;
+    color: #474a51;
   }
 
   &__item-content {
+    background: #f4f4fc;
+    border-radius: 20px;
+    padding: 10px 10px 10px 0;
   }
   .uk-accordion-title::before {
     width: 1.5em;

@@ -1,7 +1,6 @@
 .slider {
   font-family: "TTNorms", Arial, Helvetica, sans-serif;
-  margin: 33px 102px 0;
-  // padding: 0 102px;
+  margin: 33px -140px 0;
   overflow: hidden;
 
   &__container {
@@ -64,6 +63,13 @@
     border-radius: 8px;
     border: none;
     cursor: pointer;
+    transition: color 0.5s cubic-bezier(0, 2, 0, -0.1);
+
+    &:hover {
+      text-decoration: none;
+      background: #ffffff;
+      color: #000;
+    }
 
     &_color_not-main {
       background: none;
