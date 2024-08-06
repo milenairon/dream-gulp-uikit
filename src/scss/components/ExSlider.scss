@@ -52,16 +52,15 @@
     color: #fff;
     padding: 12px 24px;
     width: fit-content;
-    background: linear-gradient(
-      to right,
-      #b8914d,
-      #dbbb85,
-      #a3844f,
-      #b8914d,
-      #dbbb85,
-      #b8914d,
-      #c9a464
-    );
+    background: linear-gradient(0deg, #b8914d, #b8914d),
+      linear-gradient(
+        91.39deg,
+        #dbbb85 -71.74%,
+        #a3844f 56.82%,
+        #b8914d 188.51%
+      ),
+      linear-gradient(90.24deg, #dbbb85 0%, #b8914d 49.4%, #c9a464 100%);
+
     border-radius: 8px;
     border: none;
     cursor: pointer;
