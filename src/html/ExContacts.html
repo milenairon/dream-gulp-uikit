@@ -1,3 +1,40 @@
-<section class="contacts" >
-    
+<section class="contacts">
+  <h2 class="contacts__title">18 минут до центра Новосибирска</h2>
+  <form name="formEdit" class="contacts__form">
+    <div class="contacts__box">
+      <label class="contacts__field">
+        <input
+          class="contacts__name contacts__input"
+          type="text"
+          name="name"
+          minlength="2"
+          maxlength="40"
+          placeholder="Ваше имя"
+          required
+        />
+      </label>
+      <label class="contacts__field">
+        <input
+          id="tel"
+          class="contacts__tel contacts__input"
+          type="tel"
+          name="tel"
+          placeholder="+7 9999999999999"
+          required
+        />
+      </label>
+      <button
+        aria-label="Смотреть на экскурсии"
+        class="contacts__button"
+        type="submit"
+        disabled
+      >
+        Смотреть на экскурсии
+      </button>
+    </div>
+    <label class="contacts__field-checkbox contacts__field_place_checkbox">
+      <input class="contacts__checkbox" type="checkbox" checked />
+      Я даю согласие на обработку персональных данных
+    </label>
+  </form>
 </section>

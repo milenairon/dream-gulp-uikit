@@ -2,6 +2,7 @@
 // import beautify from "gulp-beautify";
 // import { webpackConfig } from '../../webpack.config.js';
 import uglify from "gulp-uglify";
+import rename from "gulp-rename";
 
 const js = () => {
   return (
@@ -28,6 +29,7 @@ const js = () => {
       //   "e4x": false,
       //   "indent_empty_lines": false
       // })))
+      .pipe(rename({ extname: ".min.js" })) // переименует
       .pipe(app.gulp.dest(app.path.build.js)) // выгружаем в папку с результатом
       .pipe(app.plugins.browserSync.stream()) // локальный сервер
   );
