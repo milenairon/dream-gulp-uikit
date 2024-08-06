@@ -1,4 +1,7 @@
-.advantages {
+//2 блока:
+// &_place_advantages
+// &_place_purchase
+.slider-mini {
   font-family: "TTNorms", Arial, Helvetica, sans-serif;
   margin-top: 100px;
 
@@ -10,23 +13,36 @@
     text-align: center;
   }
 
+  &__subtitle {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 39px;
+    color: #474a51;
+    text-align: center;
+  }
+
   &__container {
     margin-top: 50px;
   }
 
   &__items {
     gap: 27px;
+    width: 100%;
+    justify-content: center;
   }
   &__item {
     border-radius: 30px;
     min-height: 450px;
     min-width: 340px;
-    max-width: fit-content;
+    max-width: 500px;
     padding: 32px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 
     &:hover {
       opacity: 80%;
