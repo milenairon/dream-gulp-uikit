@@ -1,7 +1,11 @@
 .header {
-  font-family: "TTNorms", Arial, Helvetica, sans-serif;
   padding: 25px 102px 14px;
-  background: linear-gradient(90.24deg, #DBBB85 0%, #B8914D 49.4%, #C9A464 100%);
+  background: linear-gradient(
+    90.24deg,
+    #dbbb85 0%,
+    #b8914d 49.4%,
+    #c9a464 100%
+  );
 
   display: flex;
   justify-content: space-between;
@@ -15,9 +19,9 @@
   }
 
   &__text {
-    font-weight: 400;
-    font-size: 15px;
-    line-height: 18px;
+    // font-weight: 400;
+    font-size: 1.3em;
+    // line-height: 18px;
     max-width: 290px;
     color: #ffffff;
   }
@@ -45,9 +49,9 @@
     text-align: center;
     border: none;
     background-color: #ffffff;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 19px;
+    // font-weight: 400;
+    font-size: 1.3em;
+    // line-height: 19px;
     color: #000000;
   }
 
@@ -64,16 +68,16 @@
   }
 
   &__phone {
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 43px;
+    // font-weight: 700;
+    font-size: 3em;
+    // line-height: 43px;
     color: #ffffff;
   }
 
   &__city {
-    font-weight: 400;
-    font-size: 24px;
-    line-height: 29px;
+    // font-weight: 400;
+    font-size: 2em;
+    // line-height: 29px;
     color: #ffffff;
   }
 }

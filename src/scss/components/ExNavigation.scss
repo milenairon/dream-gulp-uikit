@@ -1,7 +1,6 @@
 .navigation {
-  font-family: "TTNorms", Arial, Helvetica, sans-serif;
   padding: 10px 108px 17px;
-  border-bottom: 1px solid #b8914d;
+  border-bottom: 1px solid $baseColor;
 
   &__items {
     display: flex;
@@ -12,8 +11,8 @@
   }
 
   &__link {
-    font-weight: 400px;
-    font-size: 24px;
-    line-height: 29px;
+    // font-weight: 400px;
+    font-size: 2em;
+    // line-height: 29px;
   }
 }

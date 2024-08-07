@@ -7,20 +7,20 @@
 @import "config/fonts";
 
 // /** Подключение переменных */
-// @import 'config/vars';
+@import 'config/vars';
 
 // /** Подключение sass function и mixins и extends стилей */
-// @import 'config/functions';
-// @import 'config/mixins';
-// @import 'config/keyframes';
+@import 'config/functions';
+@import 'config/mixins';
+@import 'config/keyframes';
 
 // Общие параметры, шаблоны(заготовки) и вспомогательные классы */
 @import "config/base";
 
-// /** БЕМ блоки используемые во всё проекте */
-// @import 'config/common';
+/** БЕМ блоки используемые во всё проекте */
+@import 'config/common';
 
-// /** Подключение стилей отдельных блоков и секций */
+/** Подключение стилей отдельных блоков и секций */
 @import "components/ExHeader.scss";
 @import "components/ExBurger.scss";
 @import "components/ExButton.scss";
@@ -28,7 +28,6 @@
 @import "components/ExNavigation.scss";
 @import "components/ExSlider.scss";
 @import "components/ExLayout.scss";
-@import "components/ExSpanColor.scss";
 @import "components/ExExamples.scss";
 @import "components/ExRelative.scss";
 @import "components/ExSlider-mini.scss";
@@ -38,23 +37,22 @@
 @import "components/ExContacts.scss";
 @import "components/ExQuestions.scss";
 @import "components/ExFooter.scss";
-// @import "./node_modules/swiper/swiper-bundle";
 
-main {
-  padding: 0 15px;
-  margin: 0 auto;
-  // display: flex;
-  // flex-direction: column;
-  // align-items: center;
-  // justify-content: center;
-}
+// main { ТАК ЛУЧШЕ НЕ ДЕЛАТЬ
+//   padding: 0 15px;
+//   margin: 0 auto;
+//   // display: flex;
+//   // flex-direction: column;
+//   // align-items: center;
+//   // justify-content: center;
+// }
 
-body {
-  margin: 0 auto;
-}
+// body {
+//   margin: 0 auto;
+// }
 
-@media (max-width: 640px) {
-  body {
-    // background-color: rgb(47, 0, 255);
-  }
-}
+// @media (max-width: 640px) {
+//   body {
+//     // background-color: rgb(47, 0, 255);
+//   }
+// }

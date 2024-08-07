@@ -1,5 +1,4 @@
 .presentation {
-  font-family: "TTNorms", Arial, Helvetica, sans-serif;
   padding: 168px 70px;
   display: flex;
   flex-direction: column;
@@ -10,22 +9,20 @@
   border-radius: 25px;
   max-width: 1450px;
   margin: 125px auto 0;
-  box-sizing: border-box;
 
   &__title {
-    font-weight: 700;
+    // font-weight: 700;
     text-align: center;
-    font-size: 48px;
-    line-height: 58px;
-    color: #ffffff;
+    // line-height: 58px;
+    color: $textColorLight;
   }
   &__text {
     margin-top: 28px;
-    font-weight: 400;
+    // font-weight: 400;
     text-align: center;
-    font-size: 36px;
-    line-height: 43px;
-    color: #ffffff;
+    font-size: 3em;
+    // line-height: 43px;
+    color: $textColorLight;
   }
   &__btn {
     margin-top: 73px;
@@ -38,9 +35,9 @@
       ),
       linear-gradient(90.24deg, #dbbb85 0%, #b8914d 49.4%, #c9a464 100%);
 
-    font-weight: 400;
+    // font-weight: 400;
     text-align: center;
-    font-size: 20px;
+    font-size: 1.6em;
     border-radius: 10px;
     color: #ffffff;
     padding: 25px 35px;

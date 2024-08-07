@@ -1,33 +1,37 @@
+$laptop: 1440;
 $tablet: 1200;
 $mobile: 640;
 
-// //-----------------------------------------
-// $baseColor: #113D63;
-// $bodyColor: #F5F5F5;
-// $frameColor: #FFFFFFB8;
-// $cardColor: #F4F4FC;
-// $overlayColor: #000000AA;
-// //-----------------------------------------
-// $textColor: #282828;
-// $textColorLight: #6EC1E4;
-// $textColorDark: #113D63;
-// $textColorAccent: #767676;
-// //-----------------------------------------
-// $linkColor: #237FCF;
-// //-----------------------------------------
-// $btnColor: #F5F5F5;
-// $btnBgColor: #237FCF;
-// $btnHoverColor: #282828;
-// $btnHoverBgColor: #DCDCDC;
-// //-----------------------------------------
-// $btnDarkColor: #FFFFFF;
-// $btnDarkBgColor: #000000;
-// $btnHoverDarkColor: #000000;
-// $btnHoverDarkBgColor: #DCDCDC;
-// //-----------------------------------------
-// $borderColor: #113D63;
-// $borderColorLight: #FFFFFF;
-// //-----------------------------------------
-// $sliderBtnColor: #113D63;
-// $lightboxBtnColor: #FFFFFF;
-// //-----------------------------------------
+$baseColor: #b8914d;
+$bodyColor: #ffffff;
+$frameColor: #474a51; // что это?
+$cardColor: #f4f4fc;
+
+$borderColor: #b8914d;
+$borderColorLight: #ffffff;
+
+$textColor: #474a51;
+$textColorLight: #ffffff;
+$textColorDark: #000000;
+
+$titleColor: #474a51;
+
+$linkColor: #237fcf;
+
+$btnColor: #000000;
+$btnBgColor: #ffffff;
+
+$btnHoverColor: #282828;
+$btnHoverBgColor: #dcdcdc;
+
+$sliderBtnColor: #b8914d;
+$lightboxBtnColor: #b8914d;
+
+$burgerOverlayBg: #000000aa;
+$backSvgcColor: #4d5057;
+
+$white: rgb(255, 255, 255);
+$black: rgb(0, 0, 0);
+
+$textAccentDark: #767676;
+$backAccentColor: #f2f1f0;

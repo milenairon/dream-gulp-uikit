@@ -1,5 +1,4 @@
 .slider {
-  font-family: "TTNorms", Arial, Helvetica, sans-serif;
   margin: 33px 0px 0;
   max-width: 1690px;
   margin: 0 auto;
@@ -27,18 +26,17 @@
   }
 
   &__title {
-    font-weight: 700px;
-    font-size: 64px;
-    line-height: 77px;
+    // font-weight: 700px;
+    // line-height: 77px;
     // Раскомментировать, если не использовать <br>
     // max-width: 70%;
   }
 
   &__text {
     margin-top: 9px;
-    font-weight: 400px;
-    font-size: 36px;
-    line-height: 43px;
+    // font-weight: 400px;
+    font-size: 3em;
+    // line-height: 43px;
   }
 
   &__slider__box-button {
@@ -48,9 +46,9 @@
   }
 
   &__button {
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 24px;
+    // font-weight: 400;
+    font-size: 1.6em;
+    // line-height: 24px;
     color: #fff;
     padding: 12px 24px;
     width: fit-content;
@@ -80,7 +78,7 @@
       color: #000000;
     }
   }
-  
+
   .uk-light a {
     &:hover {
       color: #000;
@@ -97,8 +95,8 @@
     background-image: url("@images/slider/button-leaf.svg");
     border-radius: 50%;
   }
-  
-  &__button-next{
+
+  &__button-next {
   }
 
   &__container:hover &__box-next {
@@ -123,6 +121,6 @@
 
   // Окрашивание активной навигационной точки
   .uk-light .uk-dotnav > .uk-active > * {
-    background-color: #b8914d;
+    background-color: $baseColor;
   }
 }

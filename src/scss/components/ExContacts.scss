@@ -1,5 +1,4 @@
 .contacts {
-  font-family: "TTNorms", Arial, Helvetica, sans-serif;
   padding: 70px 200px 40px;
   background-color: #474a51;
   border-radius: 30px;
@@ -9,8 +8,6 @@
   z-index: 0;
   max-width: 1450px;
   margin: 100px auto 0;
-  box-sizing: border-box;
-
   &::before {
     content: "";
     position: absolute;
@@ -29,11 +26,10 @@
     left: 0;
     top: 0;
     z-index: 2;
-    font-weight: 700;
+    // font-weight: 700;
     text-align: center;
-    font-size: 48px;
-    line-height: 58px;
-    color: #ffffff;
+    // line-height: 58px;
+    color: $textColorLight;
   }
 
   &__form {
@@ -58,17 +54,17 @@
   &__field {
     &_place_checkbox {
       // margin-top: 35px;
-      font-weight: 400;
-      font-size: 24px;
-      line-height: 28px;
-      color: #ffffff;
+      // font-weight: 400;
+      font-size: 2em;
+      // line-height: 28px;
+      color: $textColorLight;
     }
   }
 
   &__input {
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 24px;
+    // font-weight: 400;
+    font-size: 1.7em;
+    // line-height: 24px;
     border-radius: 8px;
     padding: 25px 35px;
   }
@@ -89,12 +85,12 @@
       ),
       linear-gradient(90.24deg, #dbbb85 0%, #b8914d 49.4%, #c9a464 100%);
 
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 24px;
+    // font-weight: 400;
+    font-size: 1.7em;
+    // line-height: 24px;
     border-radius: 8px;
     padding: 25px 30px;
-    color: #ffffff;
+    color: $textColorLight;
     cursor: pointer;
 
     &_disabled {
@@ -106,7 +102,7 @@
   input[type="checkbox"] {
     // margin-top: 35px;
     margin: 35px 15px 0 0;
-    accent-color: #fff;
+    accent-color: $textColorLight;
     width: 19px;
     height: 20px;
   }

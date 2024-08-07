@@ -2,22 +2,20 @@
 // &_place_advantages
 // &_place_purchase
 .slider-mini {
-  font-family: "TTNorms", Arial, Helvetica, sans-serif;
   max-width: 1450px;
   margin: 100px auto 0;
 
   &__title {
-    font-weight: 700;
-    font-size: 48px;
-    line-height: 57px;
+    // font-weight: 700;
+    // line-height: 57px;
     color: #474a51;
     text-align: center;
   }
 
   &__subtitle {
-    font-weight: 700;
-    font-size: 32px;
-    line-height: 39px;
+    // font-weight: 700;
+    font-size: 2.7em;
+    // line-height: 39px;
     color: #474a51;
     text-align: center;
   }
@@ -36,7 +34,7 @@
     aspect-ratio: 340 / 450;
     max-height: 450px;
     max-width: 340px;
-    box-sizing: border-box;
+
     padding: 32px;
     display: flex;
     flex-direction: column;
@@ -52,10 +50,10 @@
   }
 
   &__title-item {
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 29px;
-    color: #fff;
+    // font-weight: 700;
+    font-size: 2em;
+    // line-height: 29px;
+    color: $textColorLight;
     text-align: center;
   }
 
@@ -63,9 +61,9 @@
     padding: 25px 22px;
     background-color: #fff;
     color: #000000;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 24px;
+    // font-weight: 400;
+    font-size: 1.6em;
+    // line-height: 24px;
     border-radius: 8px;
 
     &:hover {
