@@ -80,6 +80,12 @@
       color: #000000;
     }
   }
+  
+  .uk-light a {
+    &:hover {
+      color: #000;
+    }
+  }
 
   &__box-next {
     position: absolute;
@@ -91,8 +97,8 @@
     background-image: url("@images/slider/button-leaf.svg");
     border-radius: 50%;
   }
-
-  &__button-next {
+  
+  &__button-next{
   }
 
   &__container:hover &__box-next {
