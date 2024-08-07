@@ -1,9 +1,10 @@
 .examples {
   font-family: "TTNorms", Arial, Helvetica, sans-serif;
-  margin-top: 100px;
   background-image: url("@images/examples/background.webp");
   background-repeat: no-repeat;
   background-size: cover;
+  max-width: 1450px;
+  margin: 100px auto 0;
   width: 100%;
   height: 785px;
   border-radius: 30px;

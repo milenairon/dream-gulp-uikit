@@ -1,6 +1,5 @@
 .gallery {
   font-family: "TTNorms", Arial, Helvetica, sans-serif;
-  margin-top: 100px;
   padding: 286px 70px 120px;
   display: flex;
   flex-direction: column;
@@ -10,6 +9,9 @@
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: 30px;
+  max-width: 1450px;
+  margin: 100px auto 0;
+  box-sizing: border-box;
 
   &__text {
     font-weight: 400;

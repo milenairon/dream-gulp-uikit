@@ -1,6 +1,5 @@
 .presentation {
   font-family: "TTNorms", Arial, Helvetica, sans-serif;
-  margin-top: 125px;
   padding: 168px 70px;
   display: flex;
   flex-direction: column;
@@ -9,6 +8,9 @@
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: 25px;
+  max-width: 1450px;
+  margin: 125px auto 0;
+  box-sizing: border-box;
 
   &__title {
     font-weight: 700;

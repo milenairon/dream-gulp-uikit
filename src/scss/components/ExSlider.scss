@@ -1,6 +1,8 @@
 .slider {
   font-family: "TTNorms", Arial, Helvetica, sans-serif;
-  margin: 33px -140px 0;
+  margin: 33px 0px 0;
+  max-width: 1690px;
+  margin: 0 auto;
   overflow: hidden;
 
   &__container {
@@ -18,7 +20,8 @@
     justify-content: end;
     padding: 0 150px 124px;
     border-radius: 30px;
-    height: 760px;
+    aspect-ratio: 1690 / 760;
+    // height: 760px;
     background-repeat: no-repeat;
     background-size: 100%;
   }
