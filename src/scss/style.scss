@@ -40,7 +40,13 @@
 // @import "./node_modules/swiper/swiper-bundle";
 
 main {
-  padding: 0 240px;
+  // padding: 0 240px;
+  max-width: 1560px;
+  margin: 0 auto;
+  // display: flex;
+  // flex-direction: column;
+  // align-items: center;
+  // justify-content: center;
 }
 
 body {

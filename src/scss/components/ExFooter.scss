@@ -1,0 +1,145 @@
+.footer {
+  font-family: "TTNorms", Arial, Helvetica, sans-serif;
+  margin-top: 100px;
+  background-color: #474a51;
+
+//  Расскомментировать, если нужны границы
+// * {
+//     border: 1px solid #ffffff;
+//   }
+  //---------------------------------------------------------------------------------
+  &__containers {
+    padding: 40px 0;
+    display: grid;
+    grid-template-columns: 1fr 0.51fr 0.43fr 0.76fr;
+    grid-template-rows: 144px 286px 41px;
+    grid-template-areas:
+    // раскладка на клаве
+
+      "q q q w"
+      "a s d f"
+      "z x x c";
+    max-width: 1560px;
+    margin: 0 auto;
+  }
+  //---------------------------------------------------------------------------------
+  &__container-slogan {
+    grid-area: q;
+  }
+  &__text {
+    color: #fff;
+    &_size_xl {
+      font-weight: 700;
+      font-size: 48px;
+      line-height: 57px;
+    }
+    &_size_l {
+      font-weight: 700;
+      font-size: 36px;
+      line-height: 43px;
+    }
+    &_size_m {
+      font-weight: 400;
+      font-size: 24px;
+      line-height: 29px;
+    }
+    &_size_s {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 19px;
+    }
+  }
+  //---------------------------------------------------------------------------------
+  &__container-logo {
+    grid-area: w;
+    position: relative;
+    top: 0;
+    left: 0;
+  }
+  .logo_place_footer {
+    position: absolute;
+    width: 350px;
+    height: 110px;
+    left: auto;
+    top: 0;
+    right: 0;
+  }
+  //---------------------------------------------------------------------------------
+  &__container-contacts {
+    grid-area: a;
+  }
+  &__button-items {
+    margin-top: 13px;
+    display: flex;
+    gap: 15px;
+  }
+
+  &__button-item {
+  }
+
+  &__button {
+    height: 59px;
+    text-align: center;
+    border: none;
+    background-color: #ffffff;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #000000;
+  }
+
+  &__button-image {
+    margin-right: 17px;
+  }
+  //---------------------------------------------------------------------------------
+  &__container-nav {
+    display: flex;
+    flex-direction: column;
+    gap: 23px;
+    &_place_left {
+      grid-area: s;
+    }
+    &_place_right {
+      grid-area: d;
+    }
+  }
+  &__item-nav {
+  }
+  &__link {
+  }
+  //---------------------------------------------------------------------------------
+  &__container-messenger {
+    grid-area: f;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+  }
+  &__email {
+  }
+  &__button-image {
+  }
+  &__OOO {
+  }
+  //---------------------------------------------------------------------------------
+  //   Раскомментировать, если нужен будет контейнер
+  // &__container-OOO {}
+  &__OOO {
+    grid-area: z;
+  }
+  //---------------------------------------------------------------------------------
+  &__container-address {
+    grid-area: x;
+  }
+  &__text {
+    &_container_contacts {
+      margin: 25px 0 12px;
+    }
+  }
+  //---------------------------------------------------------------------------------
+  &__container-confidentiality {
+    grid-area: c;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+  }
+}
