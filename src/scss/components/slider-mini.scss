@@ -2,10 +2,8 @@
 // &_advantages
 // &_purchase
 .slider-mini {
-  max-width: 1450px;
-  margin: 100px auto 0;
-
   &__title {
+    margin: 0;
     // font-weight: 700;
     // line-height: 57px;
     // color: #474a51;
@@ -16,12 +14,11 @@
     // font-weight: 700;
     font-size: 2.7rem;
     // line-height: 39px;
-    color: #474a51;
     text-align: center;
   }
 
-  &__container {
-    margin-top: 50px;
+  &__box {
+    margin-top: 30px;
   }
 
   &__items {
@@ -40,9 +37,7 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+    background: no-repeat center / cover;
 
     &:hover {
       opacity: 80%;
@@ -59,20 +54,20 @@
 
   &__btn-item {
     padding: 25px 22px;
-    background-color: #fff;
-    color: #000000;
+    // background-color: #fff;
+    // color: #000000;
     // font-weight: 400;
     font-size: 1.6rem;
     // line-height: 24px;
-    border-radius: 8px;
+    // border-radius: 8px;
 
-    &:hover {
-      opacity: 80%;
-    }
+    // &:hover {
+    //   opacity: 80%;
+    // }
   }
 
   .uk-light a {
-    color: #000000;
+    color: $btnColor;
     text-decoration: none;
   }
 }
