@@ -9,9 +9,9 @@
   &__subtitle {
     margin-top: 41px;
     // font-weight: 500;
-    font-size: 3rem;
+    // font-size: 3rem;
     // line-height: 43px;
-    color: #474a51;
+    // color: #474a51;
     text-align: center;
   }
 
@@ -35,6 +35,7 @@
     display: flex;
     flex-wrap: wrap;
     gap: 12px;
+    width: 80%;
 
     &_city-communications {
       margin-top: 4rem;
@@ -48,7 +49,7 @@
     border-radius: 10px;
     background-color: $frameColor;
     height: fit-content;
-    padding: 10px;
+    padding: 1rem;
   }
   //
   //   &__box-item {
@@ -71,15 +72,15 @@
 
   &__text-item {
     // font-weight: 500;
-    font-size: 2.8rem;
+    // font-size: 2.8rem;
     // line-height: 40px;
-    color: #474a51;
+    // color: #474a51;
   }
 
   &__text {
     margin-top: 3rem;
     // font-weight: 500;
-    font-size: 2.8rem;
+    // font-size: 2.8rem;
     // line-height: 39px;
 
     &_city-communications {

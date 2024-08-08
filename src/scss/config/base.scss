@@ -156,10 +156,6 @@ textarea {
 // .uk-accordion > :nth-child(n + 2) {
 //   margin-top: 0;
 // }
-
-.uk-accordion-title {
-  color: $textColor;
-}
 //-----------------------------------------------------------
 
 .section-title {
@@ -297,9 +293,6 @@ textarea {
   }
 }
 
-.uk-svg [fill*="#"]:not(.uk-preserve) {
-  fill: auto;
-}
 // .popup {
 //     z-index: 1050;
 //     text-align: center;
