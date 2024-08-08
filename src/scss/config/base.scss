@@ -36,22 +36,22 @@ h6 {
 }
 
 h1 {
-  font-size: 5, 5em;
+  font-size: 5, 5rem;
 }
 
 h2 {
-  font-size: 4em;
+  font-size: 4rem;
 }
 
 h3,
 h4,
 h5,
 h6 {
-  font-size: 3em;
+  font-size: 3rem;
 }
 
 p {
-  font-size: 1.5em;
+  font-size: 1.5rem;
 }
 
 a {
@@ -68,7 +68,7 @@ a[href*="tel:"] {
 }
 
 section {
-  margin-top: 8.3em;
+  margin-top: 8.3rem;
   position: relative;
 }
 
@@ -115,12 +115,12 @@ textarea {
   &_vertical {
     display: flex;
     flex-direction: column;
-    gap: 2em;
+    gap: 2rem;
   }
 }
 // .uk-input, .uk-select, .uk-textarea {
 //   transition: 0.3s;
-//   font-size: 1.5em;
+//   font-size: 1.5rem;
 // }
 
 // .uk-accordion-content {
@@ -128,8 +128,8 @@ textarea {
 // }
 
 // .uk-accordion-title::before {
-//   width: 1em;
-//   height: 1em;
+//   width: 1rem;
+//   height: 1rem;
 //   background-size: 100%;
 // }
 
@@ -151,22 +151,22 @@ textarea {
 
 .text {
   color: $textColor;
-  font-size: 1.5rem;
+  font-size: 1.5rrem;
   font-weight: 400;
 
   &_huge {
     color: $textColor;
-    font-size: 5em;
+    font-size: 5rem;
   }
 
   &_large {
     color: $textColor;
-    font-size: 3em;
+    font-size: 3rem;
   }
 
   &_small {
     color: $textColor;
-    font-size: 1.5em;
+    font-size: 1.5rem;
   }
 
   &_bold {
@@ -183,8 +183,8 @@ textarea {
   transition: 0.3s;
   color: $btnColor;
   background: $btnBgColor;
-  font-size: 1.7rem;
-  padding: 1rem 2rem;
+  font-size: 1.7rrem;
+  padding: 1rem 2rrem;
   border-radius: 10px;
   border: none;
   display: inline-flex;
@@ -204,8 +204,8 @@ textarea {
   }
 
   &__icon {
-    width: 1em;
-    height: 1em;
+    width: 1rem;
+    height: 1rem;
   }
 
   &_dark {
@@ -232,8 +232,8 @@ textarea {
 
 .btn-icon {
   // это какие?
-  width: 2em;
-  height: 2em;
+  width: 2rem;
+  height: 2rem;
 }
 
 .slider {
@@ -265,8 +265,8 @@ textarea {
   }
 
   &__nav-btn {
-    width: 5rem;
-    height: 5rem;
+    width: 5rrem;
+    height: 5rrem;
     display: flex;
     color: $sliderBtnColor;
     background: $btnBgColor;
