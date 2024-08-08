@@ -2,38 +2,38 @@
 .span-color {
     color: $baseColor;
   }
-  .uk-dotnav>.uk-active>* {
-    transform: scale(1.3);
-    background-color: $baseColor;
-    border-color: transparent;
-}
+//   .uk-dotnav>.uk-active>* {
+//     transform: scale(1.3);
+//     background-color: $baseColor;
+//     border-color: transparent;
+// }
 
-.uk-dotnav>*>* {
-    width: 15px;
-    height: 15px;
-    background-color: $btnBgColor;
-    border: none;
-}
+// .uk-dotnav>*>* {
+//     width: 15px;
+//     height: 15px;
+//     background-color: $btnBgColor;
+//     border: none;
+// }
 
-.text {
-    &_accent {
-        color: $baseColor;
-    }
+// .text {
+//     &_accent {
+//         color: $baseColor;
+//     }
 
-    &_white {
-        color: $white;
-    }
+//     &_white {
+//         color: $white;
+//     }
 
-    &_min {
-        font-size: 1.3rem;
-    }
+//     &_min {
+//         font-size: 1.3rem;
+//     }
 
-    &_minheight {
-        line-height: 1.2;
-    }
-}
+//     &_minheight {
+//         line-height: 1.2;
+//     }
+// }
 
-.button__noactive{
-    pointer-events: none;
-    opacity: 0.5;
-}
+// .button__noactive{
+//     pointer-events: none;
+//     opacity: 0.5;
+// }

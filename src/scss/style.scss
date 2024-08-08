@@ -21,22 +21,22 @@
 @import 'config/common';
 
 /** Подключение стилей отдельных блоков и секций */
-@import "components/ExHeader.scss";
-@import "components/ExBurger.scss";
-@import "components/ExButton.scss";
-@import "components/ExLogo.scss";
-@import "components/ExNavigation.scss";
-@import "components/ExSlider.scss";
-@import "components/ExLayout.scss";
-@import "components/ExExamples.scss";
-@import "components/ExRelative.scss";
-@import "components/ExSlider-mini.scss";
-@import "components/ExGallery.scss";
-@import "components/ExInfrastructure.scss";
-@import "components/ExPresentation.scss";
-@import "components/ExContacts.scss";
-@import "components/ExQuestions.scss";
-@import "components/ExFooter.scss";
+@import "components/header.scss";
+@import "components/burger.scss";
+@import "components/button.scss";
+@import "components/logo.scss";
+@import "components/navigation.scss";
+@import "components/slider.scss";
+@import "components/layout.scss";
+@import "components/examples.scss";
+@import "components/relative.scss";
+@import "components/slider-mini.scss";
+@import "components/gallery.scss";
+@import "components/infrastructure.scss";
+@import "components/presentation.scss";
+@import "components/contacts.scss";
+@import "components/questions.scss";
+@import "components/footer.scss";
 
 // main { ТАК ЛУЧШЕ НЕ ДЕЛАТЬ
 //   padding: 0 15px;
