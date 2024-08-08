@@ -68,7 +68,7 @@ a[href*="tel:"] {
 }
 
 section {
-  margin-top: 4rem;
+  margin-top: 8.3em;
   position: relative;
 }
 
@@ -230,53 +230,54 @@ textarea {
   }
 }
 
-.btn-icon { // это какие?
+.btn-icon {
+  // это какие?
   width: 2em;
   height: 2em;
 }
 
 .slider {
-    &_centered {
-        img {
-            transition: height .2s;
-            height: 80%;
-        }
-
-        &__item_center img {
-            height: 100% !important;
-        }
+  &_centered {
+    img {
+      transition: height 0.2s;
+      height: 80%;
     }
 
-    &__wrapper {
-        padding: 20px;
+    &__item_center img {
+      height: 100% !important;
     }
+  }
 
-    &__item {
-        display: flex;
-        justify-content: center;
+  &__wrapper {
+    padding: 20px;
+  }
+
+  &__item {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__item-wrapper {
+    width: 85%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__nav-btn {
+    width: 5rem;
+    height: 5rem;
+    display: flex;
+    color: $sliderBtnColor;
+    background: $btnBgColor;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+
+    svg {
+      fill: none;
     }
-
-    &__item-wrapper {
-        width: 85%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-
-    &__nav-btn {
-        width: 5rem;
-        height: 5rem;
-        display: flex;
-        color: $sliderBtnColor;
-        background: $btnBgColor;
-        align-items: center;
-        justify-content: center;
-        border-radius: 50%;
-
-        svg {
-            fill: none;
-        }
-    }
+  }
 }
 
 // .popup {
@@ -290,15 +291,15 @@ textarea {
 // }
 
 @include media($tablet) {
-    html {
-        font-size: 11px;
-    }
+  html {
+    font-size: 11px;
+  }
 }
 
 @include media($mobile) {
-    html {
-        font-size: 10px;
-    }
+  html {
+    font-size: 10px;
+  }
 }
 
 // .noUi-handle{
