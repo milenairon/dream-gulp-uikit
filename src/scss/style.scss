@@ -1,24 +1,24 @@
 // @use 'sass:math';
 
-//Очистка дефолтных стилей
-@import "config/normalize";
+// Очистка дефолтных стилей
+// @import "config/normalize";
 
 // Подключение шрифтов локально из папки "./src/fonts" */
 @import "config/fonts";
 
 // /** Подключение переменных */
-@import 'config/vars';
+@import "config/vars";
 
 // /** Подключение sass function и mixins и extends стилей */
-@import 'config/functions';
-@import 'config/mixins';
-@import 'config/keyframes';
+@import "config/functions";
+@import "config/mixins";
+@import "config/keyframes";
 
 // Общие параметры, шаблоны(заготовки) и вспомогательные классы */
 @import "config/base";
 
 /** БЕМ блоки используемые во всё проекте */
-@import 'config/common';
+@import "config/common";
 
 /** Подключение стилей отдельных блоков и секций */
 @import "components/header.scss";
@@ -37,22 +37,3 @@
 @import "components/contacts.scss";
 @import "components/questions.scss";
 @import "components/footer.scss";
-
-// main { ТАК ЛУЧШЕ НЕ ДЕЛАТЬ
-//   padding: 0 15px;
-//   margin: 0 auto;
-//   // display: flex;
-//   // flex-direction: column;
-//   // align-items: center;
-//   // justify-content: center;
-// }
-
-// body {
-//   margin: 0 auto;
-// }
-
-// @media (max-width: 640px) {
-//   body {
-//     // background-color: rgb(47, 0, 255);
-//   }
-// }

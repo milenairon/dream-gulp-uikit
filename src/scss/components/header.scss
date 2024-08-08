@@ -57,6 +57,9 @@
 
   &__button-image {
     margin-right: 17px;
+    // & svg {
+    //   fill: "red";
+    // }
   }
 
   //телефон и город
@@ -81,3 +84,11 @@
     color: #ffffff;
   }
 }
+
+// .header__button path {
+//   fill: "red";
+// }
+
+// svg rect {
+//   fill: red;
+// }

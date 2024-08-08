@@ -1,52 +1,65 @@
 .presentation {
-  padding: 168px 70px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-image: url("@img/presentation/background.webp");
-  background-repeat: no-repeat;
-  background-size: cover;
-  border-radius: 25px;
-  max-width: 1450px;
-  margin: 125px auto 0;
+  &__container {
+  }
+
+  &__content {
+    // перенесла с section
+    // padding: 168px 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; // +
+    // gap: 50px;
+    background: url(@img/presentation/background.webp) no-repeat center center;
+    // background-repeat: no-repeat;
+    // background-size: cover;
+    border-radius: 30px;
+    min-height: 670px; // +
+    // max-width: 1450px;
+    // margin: 100px auto 0;
+    // padding: 100px;
+  }
 
   &__title {
     // font-weight: 700;
-    text-align: center;
+    // text-align: center;
     // line-height: 58px;
+    font-size: 5rem;
     color: $textColorLight;
   }
+
   &__text {
     margin-top: 28px;
     // font-weight: 400;
     text-align: center;
-    font-size: 3rem;
     // line-height: 43px;
     color: $textColorLight;
+    margin: 0;
+    width: 80%;
   }
   &__btn {
     margin-top: 73px;
-    background: linear-gradient(0deg, #b8914d, #b8914d),
-      linear-gradient(
-        91.39deg,
-        #dbbb85 -71.74%,
-        #a3844f 56.82%,
-        #b8914d 188.51%
-      ),
-      linear-gradient(90.24deg, #dbbb85 0%, #b8914d 49.4%, #c9a464 100%);
+    // background: linear-gradient(0deg, #b8914d, #b8914d),
+    //   linear-gradient(
+    //     91.39deg,
+    //     #dbbb85 -71.74%,
+    //     #a3844f 56.82%,
+    //     #b8914d 188.51%
+    //   ),
+    //   linear-gradient(90.24deg, #dbbb85 0%, #b8914d 49.4%, #c9a464 100%);
 
     // font-weight: 400;
-    text-align: center;
-    font-size: 1.6rem;
-    border-radius: 10px;
-    color: #ffffff;
-    padding: 25px 35px;
+    // text-align: center;
+    // font-size: 1.6rem;
+    // border-radius: 10px;
+    // color: #ffffff;
+    padding: 2rem 3rem;
     transition: color 0.5s cubic-bezier(0, 2, 0, -0.1);
 
-    &:hover {
-      text-decoration: none;
-      background: #ffffff;
-      color: #000;
-    }
+    // &:hover {
+    //   text-decoration: none;
+    //   background: #ffffff;
+    //   color: #000;
+    // }
   }
 }
