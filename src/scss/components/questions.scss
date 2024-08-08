@@ -1,7 +1,4 @@
 .questions {
-  max-width: 1450px;
-  margin: 30px auto 0;
-
   &__container {
   }
 
@@ -10,24 +7,38 @@
   }
 
   &__items {
-    margin: 40px 0 20px;
+    // margin: 20px 0;
   }
 
   &__item {
+    // padding-bottom: 15px;
   }
 
   &__item-title {
-    color: #474a51;
+    // color: #474a51;
+    margin: 0;
+    font-size: 1.7rem;
   }
 
   &__item-content {
-    background: #f4f4fc;
+    background: $cardColor;
     border-radius: 20px;
-    padding: 10px 10px 10px 0;
+    padding: 20px 0 10px;
   }
   .uk-accordion-title::before {
     width: 1.5rem;
     height: 1.5rem;
-    background-size: contain;
+    background-size: 100%;
   }
+}
+
+// .uk-accordion > :nth-child(n + 2) {
+//   margin-top: 0;
+// }
+
+.uk-accordion-content {
+  margin: 0;
+}
+.uk-accordion-title {
+  color: $textColor;
 }
