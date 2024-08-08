@@ -118,14 +118,17 @@ textarea {
     gap: 2rem;
   }
 }
-// .uk-input, .uk-select, .uk-textarea {
-//   transition: 0.3s;
-//   font-size: 1.5rem;
-// }
+//-----------------------------------------------------------
+.uk-input,
+.uk-select,
+.uk-textarea {
+  transition: 0.3s;
+  font-size: 1.5rem;
+}
 
-// .uk-accordion-content {
-//   margin: 0;
-// }
+.uk-accordion-content {
+  margin: 0;
+}
 
 // .uk-accordion-title::before {
 //   width: 1rem;
@@ -133,22 +136,35 @@ textarea {
 //   background-size: 100%;
 // }
 
-// .uk-slidenav {
-//   color: $sliderBtnColor;
+.uk-slidenav {
+  color: $sliderBtnColor;
+}
+
+.uk-lightbox-button {
+  color: $lightboxBtnColor;
+}
+
+.uk-modal-full {
+  background: $burgerOverlayBg;
+}
+
+.uk-accordion-title::before {
+  width: 1.5rem;
+  height: 1.5rem;
+  background-size: 100%;
+}
+// .uk-accordion > :nth-child(n + 2) {
+//   margin-top: 0;
 // }
 
-// .uk-lightbox-button {
-//   color: $lightboxBtnColor;
-// }
-
-// .uk-modal-full {
-//   background: $burgerOverlayBg;
-// }
+.uk-accordion-title {
+  color: $textColor;
+}
+//-----------------------------------------------------------
 
 .section-title {
   text-align: center;
 }
-
 
 .text {
   color: $textColor;
@@ -281,6 +297,9 @@ textarea {
   }
 }
 
+.uk-svg [fill*="#"]:not(.uk-preserve) {
+  fill: auto;
+}
 // .popup {
 //     z-index: 1050;
 //     text-align: center;

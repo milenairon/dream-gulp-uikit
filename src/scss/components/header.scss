@@ -1,4 +1,18 @@
 .header {
+  // // Окрашивание svg-картинок
+  // & .button_size_l &__button-image path {
+  //   fill: none !important;
+  // }
+
+  // & .button_size_l &__button-image path {
+  //   stroke: $baseColor !important;
+  // }
+
+  // & .button_size_s &__button-image rect {
+  //   fill: $baseColor !important;
+  // }
+
+  //----------------------------------------------------
   padding: 25px 102px 14px;
   background: linear-gradient(
     90.24deg,
@@ -84,11 +98,3 @@
     color: #ffffff;
   }
 }
-
-// .header__button path {
-//   fill: "red";
-// }
-
-// svg rect {
-//   fill: red;
-// }

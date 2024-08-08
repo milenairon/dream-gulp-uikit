@@ -1,11 +1,29 @@
 .footer {
+  // Окрашивание svg-картинок
+  & .button_size_l &__button-image path {
+    fill: none !important;
+  }
+
+  & .button_size_l &__button-image path {
+    stroke: $textColor !important;
+  }
+
+  & .button_size_s &__button-image rect {
+    fill: $textColor !important;
+  }
+
+
+
+
+
+
   margin-top: 100px;
   background-color: #474a51;
 
-  //  Расскомментировать, если нужны границы
-  * {
-    border: 1px solid #ffffff;
-  }
+  // //  Расскомментировать, если нужны границы
+  // * {
+  //   border: 1px solid #ffffff;
+  // }
   //---------------------------------------------------------------------------------
   &__containers {
     padding: 40px 0;
