@@ -13,7 +13,7 @@ const html = () => {
       .src(app.path.src.html)
       .pipe(app.plugins.handleError("HTML")) // вывод сообщения при ошибке в браузере
       .pipe(fileInclude()) // разбирает @@include на код
-      .pipe(app.plugins.replace(/@images\//g, "images/")) // искать все @images... и менять на images/
+      .pipe(app.plugins.replace(/@img\//g, "images/")) // искать все @img... и менять на images/
       /* // Раскомментировать, если надо обернуть в picture .pipe(webpHtmlNosvg()) // обворачивает в picture и подключается в формате webp //.pipe(plugins.if(app.isBuild, webpHtml()))*/
       // .pipe(
       //   htmlMin({

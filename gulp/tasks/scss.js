@@ -16,7 +16,7 @@ const scss = () => {
       .src(app.path.src.scss, { sourcemaps: true }) // было sourcemaps: isDev
       .pipe(app.plugins.handleError("SCSS")) // вывод сообщения при ошибке в браузере
       .pipe(sass({ outputStyle: "expanded" })) // перевод в css
-      .pipe(app.plugins.replace(/@images\//g, "../images/")) // перевод изображений из "@images\//g" в "../images/"
+      .pipe(app.plugins.replace(/@img\//g, "../images/")) // перевод изображений из "@img\//g" в "../images/"
       .pipe(sass({ outputStyle: "expanded" })) // перевод в css
       .pipe(groupCssMediaQueries()) // медиазапросы // .pipe(app.plugins.if(isBuild, groupCssMediaQueries()))
       .pipe(
