@@ -36,7 +36,7 @@ h6 {
 }
 
 h1 {
-  font-size: 5, 5rem;
+  font-size: 5.5rem;
 }
 
 h2 {
@@ -149,9 +149,10 @@ textarea {
   text-align: center;
 }
 
+
 .text {
   color: $textColor;
-  font-size: 1.5rrem;
+  font-size: 1.5rem;
   font-weight: 400;
 
   &_huge {
@@ -183,8 +184,8 @@ textarea {
   transition: 0.3s;
   color: $btnColor;
   background: $btnBgColor;
-  font-size: 1.7rrem;
-  padding: 1rem 2rrem;
+  font-size: 1.7rem;
+  padding: 1rem 2rem;
   border-radius: 10px;
   border: none;
   display: inline-flex;
@@ -265,8 +266,8 @@ textarea {
   }
 
   &__nav-btn {
-    width: 5rrem;
-    height: 5rrem;
+    width: 5rem;
+    height: 5rem;
     display: flex;
     color: $sliderBtnColor;
     background: $btnBgColor;
@@ -274,7 +275,6 @@ textarea {
     justify-content: center;
     border-radius: 50%;
 
-    
     svg {
       fill: none;
     }

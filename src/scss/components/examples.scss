@@ -23,7 +23,7 @@
     position: relative;
 
     // тень справа при наведении
-    &_place_right {
+    &_right {
       &::after {
         content: " ";
         display: inline-block;
@@ -38,7 +38,7 @@
     }
 
     // тень слева при наведении
-    &_place_left {
+    &_left {
       &::after {
         content: " ";
         display: inline-block;
