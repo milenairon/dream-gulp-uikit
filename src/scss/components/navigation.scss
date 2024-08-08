@@ -1,6 +1,10 @@
 .navigation {
-  padding: 10px 108px 17px;
+  padding: 10px 0 17px;
   border-bottom: 1px solid $baseColor;
+
+  &__container {
+    max-width: 1700px;
+  }
 
   &__items {
     display: flex;
@@ -16,6 +20,7 @@
     color: $textColorDark;
     // line-height: 29px;
   }
-  &__text { // +
+  &__text {
+    // +
   }
 }
