@@ -1,23 +1,29 @@
 .examples {
-  background-image: url("@img/examples/background.webp");
-  background-repeat: no-repeat;
-  background-size: cover;
-  max-width: 1450px;
-  margin: 100px auto 0;
-  width: 100%;
-  height: 785px;
-  border-radius: 30px;
-
+  &__container {
+  }
   &__items {
-    padding: 90px 115px;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    height: 100%;
+    height: 785px;
+    background: url(@img/examples/background.webp) no-repeat center / cover;
+    // background-repeat: no-repeat;
+    // background-size: cover;
+    // max-width: 1450px;
+    // margin: 100px auto 0;
+    // width: 100%;
+    // !!! min?
+    border-radius: 30px;
+    // padding: 90px 115px;
+    padding: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   &__item {
+    height: 100%;
+    flex: 0 0 45%;
     border-radius: 30px;
-    border: 2.9px solid #ffffff;
+    border: 3px solid $borderColorLight;
     height: 100%;
     overflow: hidden;
     position: relative;
@@ -44,6 +50,7 @@
         display: inline-block;
         position: relative;
         top: 0px;
+        height: 100%;
         right: -100%;
       }
 
@@ -82,9 +89,13 @@
   }
 
   &__title-item {
+    margin: 0 0 40px;
+    color: $textColorLight;
   }
 
   &__price-item {
+    margin: 0;
+    color: $textColorLight;
   }
 
   &__wrapper-text-item {
@@ -97,17 +108,17 @@
     }
   }
 
-  &__text-item {
-    // font-weight: 700;
-    font-size: 3.3rem;
-    // line-height: 48px;
-    color: #ffffff;
-  }
+  // &__text-item {
+  // font-weight: 700;
+  // font-size: 3.3rem;
+  // line-height: 48px;
+  // color: $textColorLight;
+  // }
 
   &__hidden-text-item {
     // font-weight: 400;
-    font-size: 1.3rem;
-    color: #ffffff;
+    // font-size: 1.3rem;
+    color: $textColorLight;
 
     opacity: 0;
     transition: opacity 0.5s, transform 0.5s;
@@ -115,8 +126,8 @@
 
   &__btn-item {
     background-image: url("@img/examples/btn.svg");
-    width: 67px;
-    height: 67px;
+    // width: 67px;
+    // height: 67px;
 
     &:hover {
       filter: grayscale(100%);

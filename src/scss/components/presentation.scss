@@ -10,7 +10,7 @@
     align-items: center;
     justify-content: center; // +
     // gap: 50px;
-    background: url(@img/presentation/background.webp) no-repeat center center;
+    background: url(@img/presentation/background.webp) no-repeat center / cover;
     // background-repeat: no-repeat;
     // background-size: cover;
     border-radius: 30px;
