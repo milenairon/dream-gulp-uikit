@@ -243,7 +243,6 @@ textarea {
 }
 
 .btn-icon {
-  // это какие?
   width: 2rem;
   height: 2rem;
 }
@@ -314,26 +313,26 @@ textarea {
   }
 }
 
-// .noUi-handle{
-//   width: 25px !important;
-//   height: 25px !important;
-//   border-radius: 50px !important;
-//   background: $frameColor !important;
-//   box-shadow: none !important;
-// }
-// .noUi-horizontal{
-//   height: 4px !important;
-// }
-// .noUi-handle::after{
-//   content: none !important;
-// }
-// .noUi-handle::before{
-//   content: none !important;
-// }
-// .noUi-target{
-//   background: #D3D3D3 !important;
-//   box-shadow: none !important;
-// }
-// .noUi-horizontal .noUi-handle{
-//   top: -10px !important;
-// }
+.noUi-handle{
+  width: 25px !important;
+  height: 25px !important;
+  border-radius: 50px !important;
+  background: $frameColor !important;
+  box-shadow: none !important;
+}
+.noUi-horizontal{
+  height: 4px !important;
+}
+.noUi-handle::after{
+  content: none !important;
+}
+.noUi-handle::before{
+  content: none !important;
+}
+.noUi-target{
+  background: #D3D3D3 !important;
+  box-shadow: none !important;
+}
+.noUi-horizontal .noUi-handle{
+  top: -10px !important;
+}

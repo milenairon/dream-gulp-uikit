@@ -34,7 +34,7 @@
 
   &__container {
     max-width: 1700px;
-    padding: 2rem 0;
+    padding: 2rem 1.5rem;
 
     display: flex;
     justify-content: space-between;
@@ -120,3 +120,144 @@
     color: $textColorLight;
   }
 }
+
+// --------------------------------------------------------------------------------------------------------
+.burger {
+  display: none;
+
+  &__button {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    background: $bodyColor;
+    border-radius: 50%;
+    padding: 10px;
+    border: 0;
+
+    &_active {
+      & .burger {
+        &__line {
+          &:nth-child(1) {
+            top: calc(50%);
+            transform: translate(-50%, -50%) rotate(-135deg);
+          }
+          &:nth-child(2) {
+            opacity: 0;
+          }
+          &:nth-child(3) {
+            top: calc(50%);
+            transform: translate(-50%, -50%) rotate(135deg);
+          }
+        }
+      }
+    }
+  }
+
+  &__line {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 3px;
+    width: 20px;
+    border-radius: 10px;
+    background: $baseColor;
+    transition: 0.3s;
+    &:nth-child(1) {
+      top: calc(50% - 6px);
+    }
+    &:nth-child(3) {
+      top: calc(50% + 6px);
+    }
+  }
+}
+// ------------------------------------------------------------------------
+.burger-menu {
+    &__items {
+        display: flex;
+        flex-direction: column;
+        text-transform: uppercase;
+        padding: 100px 20px 20px;
+        margin: 0;
+        background: $bodyColor;
+        margin-bottom: auto;
+    }
+
+    &__item {
+        display: flex;
+        justify-content: center;
+        padding: 10px 0px;
+        border-bottom: 1px solid $borderColor;
+        list-style-type: none;
+
+        &_text {
+            text-align: center;
+        }
+    }
+
+    &__btn {
+        width: 100%;
+    }
+
+    &__link {
+        color: $textColorDark;
+    }
+
+    &__text {
+        color: $textColorDark;
+        font-size: 1.5rem;
+    }
+
+    &__social-btns {
+        
+        justify-content: space-between;
+    }
+
+    .header__social-btn {
+        flex: 0 0 45%;
+    }
+}
+// ------------------------------------------------------------------------
+@include media($mobile) {
+  .burger {
+    display: block;
+  }
+
+  .header {
+    &__box-contacts {
+      gap: 0;
+      align-items: center;
+    }
+
+    &__text,
+    &__button-items {
+      display: none;
+    }
+
+    //     &__top {
+    //         padding: 20px 0px;
+    //         gap: 20px;
+    //     }
+
+    //     &__logo-wrapper {
+    //         flex: unset;
+    //     }
+
+    //     &__desr {
+    //         display: none;
+    //     }
+
+    //     &__btns-wrapper {
+    //         display: none;
+    //     }
+
+    //     &__contacts-wrapper {
+    //         align-items: center;
+    //     }
+
+    //     &__menu-container {
+    //         display: none;
+    //     }
+  }
+}
+

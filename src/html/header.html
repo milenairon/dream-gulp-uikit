@@ -1,4 +1,4 @@
-<header class="header">
+<header class="header" uk-sticky="media: (max-width: 768px)">
   <div class="header__container container">
     <div class="header__logo-container">
       <img
@@ -12,7 +12,6 @@
         эстетикой каждой детали!
       </p>
     </div>
-
     <div class="header__container-contacts">
       <ul class="header__button-items">
         <li class="header__button-item">
@@ -73,10 +72,104 @@
         </li>
       </ul>
       <div class="header__box-contacts">
-        <a href="tel:73832279244" class="header__phone text text_large">+7 (383) 227 92 44</a>
+        <a href="tel:73832279244" class="header__phone text text_large"
+          >+7 (383) 227 92 44</a
+        >
         <p class="header__city text">г.Новосибирск</p>
       </div>
     </div>
-    @@include('burger-menu.html', {})
+    <div class="header__burger burger">
+      <button class="burger__button">
+        <div class="burger__line"></div>
+        <div class="burger__line"></div>
+        <div class="burger__line"></div>
+      </button>
+    </div>
   </div>
 </header>
+
+<!-- Меню, вылазиющее при нажатии -->
+ <!-- uk-modal, uk-modal-full - Чтобы создать модал, который заполняет всю страницу -->
+  
+ <!-- uk-modal-dialog - в дочерний <div> элемент, чтобы создать диалоговое окно -->
+  
+ <!-- uk-modal-body - создать заполнение между модалом и его содержимым.-->
+<div id="burger-menu" class="burger-menu uk-modal-full uk-modal">
+  <ul class="text burger-menu__items uk-modal-dialog uk-modal-body">
+    <li class="burger-menu__item burger-menu__item_text">
+      <span class="burger-menu__text">
+        Качество жизни – это выбирать лучшее, жить в лоне природы и наслаждаться
+        эстетикой каждой детали!
+      </span>
+    </li>
+    <li class="burger-menu__item">
+      <a class="burger-menu__link" href="#">О проекте</a>
+    </li>
+    <li class="burger-menu__item">
+      <a class="burger-menu__link" href="#">Квартиры</a>
+    </li>
+    <li class="burger-menu__item">
+      <a class="burger-menu__link" href="#">Способ оплаты</a>
+    </li>
+    <li class="burger-menu__item">
+      <a class="burger-menu__link" href="#">Партнерам</a>
+    </li>
+    <li class="burger-menu__item">
+      <a class="burger-menu__link" href="#">Новости</a>
+    </li>
+    <li class="burger-menu__item">
+      <a
+        href="#"
+        class="btn btn_dark burger-menu__btn header__btn header__map-btn"
+      >
+        <img
+          src="@img/header/map.svg"
+          alt="2ГИС"
+          class="btn-icon header__map-btn-icon"
+          uk-svg
+        />
+        <span class="header__map-btn-text">2ГИС</span>
+      </a>
+    </li>
+    <li class="burger-menu__item">
+      <!-- зачем #callback-popup? -->
+      <a
+        href="#callback-popup"
+        class="btn btn_dark burger-menu__btn header__btn header__recall-btn"
+        uk-toggle
+      >
+        <img
+          src="@img/header/phone.svg"
+          alt="Связаться с нами"
+          class="btn-icon header__recall-btn-icon"
+          uk-svg
+        />
+        <span class="header__recall-btn-text">Связаться с нами</span>
+      </a>
+    </li>
+    <li class="burger-menu__item burger-menu__social-btns">
+      <a
+        href="#"
+        class="btn btn_dark burger-menu__btn header__btn header__social-btn header__vk-btn"
+      >
+        <img
+          src="@img/header/vk.svg"
+          alt="ВК"
+          class="btn-icon header__social-icon header__vk-btn-icon"
+          uk-svg
+        />
+      </a>
+      <a
+        href="#"
+        class="btn btn_dark burger-menu__btn header__btn header__social-btn header__tg-btn"
+      >
+        <img
+          src="@img/header/tg.svg"
+          alt="Телеграм"
+          class="btn-icon header__social-icon header__tg-btn-icon"
+          uk-svg
+        />
+      </a>
+    </li>
+  </ul>
+</div>

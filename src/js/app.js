@@ -1,3 +1,7 @@
+import BurgerMenu from "./BurgerMenu.js";
+
+const ismobile = document.documentElement.clientWidth <= 640;
+
 async function CallbackFormInit() {
   let forms = document.querySelectorAll("form");
 
@@ -148,9 +152,10 @@ document.addEventListener("DOMContentLoaded", (event) => {
   // InsertPostContents();    // Содержание статьи по заголовкам
   // LoadMapOnScroll();       // Прогрузка карты при скролле
 
-  // if(isTablet) {
-  //     InitBurgerMenu();
-  // }
+  if (ismobile) {
+    const burgerNode = document.querySelector(".burger");
+    new BurgerMenu(burgerNode);
+  }
 
   // Наложение партикла
   // particlesJS.load('particles-slider', 'static/ParticlesJSON/GreenHexagons.json');

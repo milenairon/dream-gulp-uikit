@@ -29,7 +29,7 @@ const js = () => {
       //   "e4x": false,
       //   "indent_empty_lines": false
       // })))
-      .pipe(rename({ extname: ".min.js" })) // переименует
+    //   .pipe(rename({ extname: ".min.js" })) // переименует
       .pipe(app.gulp.dest(app.path.build.js)) // выгружаем в папку с результатом
       .pipe(app.plugins.browserSync.stream()) // локальный сервер
   );

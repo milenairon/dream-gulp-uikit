@@ -27,3 +27,9 @@
     // +
   }
 }
+
+@include media($mobile) {
+  .navigation {
+    display: none;
+  }
+}

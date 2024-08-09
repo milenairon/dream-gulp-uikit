@@ -53,8 +53,8 @@ const scss = () => {
       //   "e4x": false,
       //   "indent_empty_lines": false
       // })))
-      /*// Раскомментировать если нужен не сжатый дубль файла стилей
-      .pipe(app.gulp.dest(app.path.build.css))*/
+      // Раскомментировать если нужен не сжатый дубль файла стилей
+      .pipe(app.gulp.dest(app.path.build.css))
       .pipe(cleanCss()) // сжатие файла
       .pipe(rename({ extname: ".min.css" })) // переименует
       .pipe(app.gulp.dest(app.path.build.css)) // выгружаем в папку с результатом
