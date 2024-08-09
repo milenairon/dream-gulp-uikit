@@ -38,6 +38,7 @@
     // line-height: 18px;
     max-width: 290px;
     color: #ffffff;
+    margin: 0; // +
   }
 
   // кнопки с месенджерами и контактами
@@ -51,6 +52,9 @@
     display: flex;
     gap: 14px;
     align-items: center;
+    padding-left: 0; // +
+    margin: 0; // +
+    list-style-type: none; // +
   }
 
   //li
@@ -85,6 +89,7 @@
   }
 
   &__phone {
+    margin: 0; // +
     // font-weight: 700;
     font-size: 3rem;
     // line-height: 43px;
@@ -92,6 +97,7 @@
   }
 
   &__city {
+    margin: 0; // +
     // font-weight: 400;
     font-size: 2rem;
     // line-height: 29px;

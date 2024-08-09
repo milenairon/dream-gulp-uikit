@@ -7,4 +7,12 @@
     max-width: 1012px;
     width: 100%;
   }
+  &_footer {
+    position: absolute;
+    width: 350px;
+    height: 110px;
+    left: auto;
+    top: 0;
+    right: 0;
+  }
 }

@@ -1,4 +1,5 @@
 .footer {
+  background-color: $frameColor;
   // Окрашивание svg-картинок
   & .button_size_l &__button-image path {
     fill: none !important;
@@ -12,13 +13,7 @@
     fill: $textColor !important;
   }
 
-
-
-
-
-
-  margin-top: 100px;
-  background-color: #474a51;
+  // margin-top: 100px;
 
   // //  Расскомментировать, если нужны границы
   // * {
@@ -73,22 +68,17 @@
     top: 0;
     left: 0;
   }
-  .logo_footer {
-    position: absolute;
-    width: 350px;
-    height: 110px;
-    left: auto;
-    top: 0;
-    right: 0;
-  }
+
   //---------------------------------------------------------------------------------
   &__container-contacts {
     grid-area: a;
   }
   &__button-items {
-    margin-top: 13px;
     display: flex;
     gap: 15px;
+    margin: 13px 0 0; // +
+    padding-left: 0; // +
+    list-style-type: none; // +
   }
 
   &__button-item {
@@ -113,6 +103,9 @@
     display: flex;
     flex-direction: column;
     gap: 23px;
+    margin: 0; // +
+    padding-left: 0; // +
+    list-style-type: none; // +
     &_left {
       grid-area: s;
     }
