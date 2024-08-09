@@ -1,81 +1,82 @@
-<header
-  class="header"
->
-  <div class="header__logo-container">
-    <img
-      class="logo logo_header"
-      src="@img/header/logo.svg"
-      uk-svg
-      alt="Мечта"
-    />
-    <p class="header__text">
-      Качество жизни – это выбирать лучшее, жить в лоне природы и наслаждаться
-      эстетикой каждой детали!
-    </p>
-  </div>
-  <div class="header__container-contacts">
-    <ul class="header__button-items">
-      <li class="header__button-item">
-        <button
-          aria-label="Открыть 2гис"
-          type="button"
-          class="header__button button button_size_l"
-        >
-          <img
-            class="header__button-image"
-            src="@img/header/map.svg"
-            uk-svg
-            alt="2гис"
-          />2ГИС
-        </button>
-      </li>
-      <li class="header__button-item">
-        <button
-          aria-label="Связаться с нами"
-          type="button"
-          class="header__button button button_size_l"
-        >
-          <img
-            class="header__button-image"
-            src="@img/header/phone.svg"
-            uk-svg
-            alt="Телефон"
-          />Связаться с нами
-        </button>
-      </li>
-      <li class="header__button-item">
-        <button
-          aria-label="Перейти в вк"
-          type="button"
-          class="header__button button button_size_s"
-        >
-          <img
-            class="header__button-image"
-            src="@img/header/vk.svg"
-            uk-svg
-            alt="вк"
-          />
-        </button>
-      </li>
-      <li class="header__button-item">
-        <button
-          aria-label="Перейти в телеграм"
-          type="button"
-          class="header__button button button_size_s"
-        >
-          <img
-            class="header__button-image"
-            src="@img/header/tg.svg"
-            uk-svg
-            alt="Телеграм"
-          />
-        </button>
-      </li>
-    </ul>
-    <div class="header__box-contacts">
-      <p class="header__phone">+7 (383) 227 92 44</p>
-      <p class="header__city">г.Новосибирск</p>
+<header class="header">
+  <div class="header__container container">
+    <div class="header__logo-container">
+      <img
+        class="logo logo_header"
+        src="@img/header/logo.svg"
+        uk-svg
+        alt="Мечта"
+      />
+      <p class="header__text text">
+        Качество жизни – это выбирать лучшее, жить в лоне природы и наслаждаться
+        эстетикой каждой детали!
+      </p>
     </div>
+
+    <div class="header__container-contacts">
+      <ul class="header__button-items">
+        <li class="header__button-item">
+          <button
+            aria-label="Открыть 2гис"
+            type="button"
+            class="header__button btn button button_size_l"
+          >
+            <img
+              class="header__button-image"
+              src="@img/header/map.svg"
+              uk-svg
+              alt="2гис"
+            />2ГИС
+          </button>
+        </li>
+        <li class="header__button-item">
+          <button
+            aria-label="Связаться с нами"
+            type="button"
+            class="header__button btn button button_size_l"
+          >
+            <img
+              class="header__button-image"
+              src="@img/header/phone.svg"
+              uk-svg
+              alt="Телефон"
+            />Связаться с нами
+          </button>
+        </li>
+        <li class="header__button-item">
+          <button
+            aria-label="Перейти в вк"
+            type="button"
+            class="header__button btn button button_size_s"
+          >
+            <img
+              class="header__button-image"
+              src="@img/header/vk.svg"
+              uk-svg
+              alt="вк"
+            />
+          </button>
+        </li>
+        <li class="header__button-item">
+          <button
+            aria-label="Перейти в телеграм"
+            type="button"
+            class="header__button btn button button_size_s"
+          >
+            <img
+              class="header__button-image"
+              src="@img/header/tg.svg"
+              uk-svg
+              alt="Телеграм"
+            />
+          </button>
+        </li>
+      </ul>
+      <div class="header__box-contacts">
+        <a href="tel:73832279244" class="header__phone text text_large">+7 (383) 227 92 44</a>
+        <p class="header__city text">г.Новосибирск</p>
+      </div>
+    </div>
+    @@include('burger-menu.html', {})
   </div>
-  @@include('burger-menu.html', {})
 </header>

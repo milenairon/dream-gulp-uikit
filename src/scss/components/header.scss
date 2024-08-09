@@ -1,4 +1,10 @@
 .header {
+  background: linear-gradient(
+    90.24deg,
+    #dbbb85 0%,
+    #b8914d 49.4%,
+    #c9a464 100%
+  );
   // // Окрашивание svg-картинок
   // & .button_size_l &__button-image path {
   //   fill: none !important;
@@ -12,32 +18,41 @@
   //   fill: $baseColor !important;
   // }
 
+  // Окрашивание кнопок Если слетело .uk-svg(fill: auto)
+  & .button_size_l &__button-image path {
+    fill: none !important;
+  }
+
+  & .button_size_l &__button-image path {
+    stroke: $baseColor !important;
+  }
+
+  & .button_size_s &__button-image rect {
+    fill: $baseColor !important;
+  }
   //----------------------------------------------------
-  padding: 25px 102px 14px;
-  background: linear-gradient(
-    90.24deg,
-    #dbbb85 0%,
-    #b8914d 49.4%,
-    #c9a464 100%
-  );
 
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  &__container {
+    max-width: 1700px;
+    padding: 2rem 0;
 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
   // логотип и текст
   &__logo-container {
     display: flex;
     flex-wrap: nowrap;
-    gap: 52px;
+    gap: 4rem;
   }
 
   &__text {
     // font-weight: 400;
-    font-size: 1.3rem;
+    // font-size: 1.5rem;
     // line-height: 18px;
     max-width: 290px;
-    color: #ffffff;
+    color: $textColorLight;
     margin: 0; // +
   }
 
@@ -64,17 +79,18 @@
   // кнопки с контактами
   &__button {
     height: 62px;
-    text-align: center;
-    border: none;
-    background-color: #ffffff;
+    // text-align: center;
+    // border: none;
+    // background-color: #ffffff;
     // font-weight: 400;
     font-size: 1.3rem;
     // line-height: 19px;
-    color: #000000;
+    // color: #000000;
+    padding: 0;
   }
 
   &__button-image {
-    margin-right: 17px;
+    // margin-right: 17px;
     // & svg {
     //   fill: "red";
     // }
@@ -91,9 +107,9 @@
   &__phone {
     margin: 0; // +
     // font-weight: 700;
-    font-size: 3rem;
+    // font-size: 3rem;
     // line-height: 43px;
-    color: #ffffff;
+    color: $textColorLight;
   }
 
   &__city {
@@ -101,6 +117,6 @@
     // font-weight: 400;
     font-size: 2rem;
     // line-height: 29px;
-    color: #ffffff;
+    color: $textColorLight;
   }
 }
