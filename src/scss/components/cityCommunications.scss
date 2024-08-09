@@ -1,4 +1,4 @@
-.infrastructure {
+.city-communications {
   &__title {
     // font-weight: 700;
     // line-height: 57px;
@@ -37,12 +37,10 @@
     gap: 12px;
     // width: 80%;
 
-    // &_city-communications {
-    //   margin-top: 4rem;
-    //   gap: 18px;
-    //   justify-content: center;
-    //   padding: 0 20rem;
-    // }
+    margin-top: 4rem;
+    gap: 18px;
+    justify-content: center;
+    padding: 0 20rem;
   }
 
   &__item {
@@ -83,9 +81,7 @@
     // font-size: 2.8rem;
     // line-height: 39px;
 
-    // &_city-communications {
-    //   margin-top: 30px;
-    //   text-align: center;
-    // }
+    margin-top: 30px;
+    text-align: center;
   }
 }
