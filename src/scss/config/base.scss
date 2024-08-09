@@ -12,13 +12,12 @@ html {
   font-size: 12px;
 }
 
+
 body {
   background-color: $bodyColor;
   overflow-y: hidden;
   font-family: "TTNorms", Arial, Helvetica, sans-serif;
-
   line-height: 1.3;
-
   min-height: 100vh;
   display: flex;
   flex-direction: column;

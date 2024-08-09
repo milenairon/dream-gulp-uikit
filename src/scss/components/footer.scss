@@ -1,5 +1,8 @@
 .footer {
   background-color: $frameColor;
+
+  //---------------------------------------------------------------------------------
+
   // Окрашивание svg-картинок
   & .button_size_l &__button-image path {
     fill: none !important;
@@ -21,7 +24,7 @@
   // }
   //---------------------------------------------------------------------------------
   &__containers {
-    padding: 40px 0;
+    padding: 40px 15px;
     display: grid;
     grid-template-columns: 1fr 0.51fr 0.43fr 0.76fr;
     grid-template-rows: 144px 286px 41px;
@@ -32,24 +35,23 @@
       "a s d f"
       "z x x c";
     max-width: 1560px;
-    margin: 0 auto;
   }
   //---------------------------------------------------------------------------------
   &__container-slogan {
     grid-area: q;
   }
   &__text {
-    color: #fff;
+    color: $textColorLight;
     &_size_xl {
       // font-weight: 700;
       font-size: 4rem;
       // line-height: 57px;
     }
-    &_size_l {
-      // font-weight: 700;
-      font-size: 3rem;
-      // line-height: 43px;
-    }
+    // &_size_l {
+    //   // font-weight: 700;
+    //   font-size: 3rem;
+    //   // line-height: 43px;
+    // }
     &_size_m {
       // font-weight: 400;
       font-size: 2rem;
@@ -85,18 +87,20 @@
   }
 
   &__button {
-    height: 59px;
-    text-align: center;
-    border: none;
-    background-color: #ffffff;
+    gap: 0;
+    height: 61px;
+    padding: 0;
+    // text-align: center;
+    // border: none;
+    // background-color: $btnBgColor;
     // font-weight: 400;
     font-size: 1.3rem;
     // line-height: 19px;
-    color: #000000;
+    // color: $btnHoverColor;
   }
 
-  &__button-image {
-    margin-right: 17px;
+  .button_size_l &__button-image {
+    margin-right: 1.5rem;
   }
   //---------------------------------------------------------------------------------
   &__container-nav {
@@ -141,8 +145,9 @@
     grid-area: x;
   }
   &__text {
+    margin: 0;
     &_container_contacts {
-      margin: 25px 0 12px;
+      margin: 2rem 0 1rem;
     }
   }
   //---------------------------------------------------------------------------------
