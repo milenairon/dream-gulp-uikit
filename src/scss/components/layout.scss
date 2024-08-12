@@ -156,3 +156,35 @@
     // z-index: 3;
   }
 }
+@include media($tablet) {
+  .layout {
+    &__container {
+      gap: 20px;
+    }
+
+    &__items {
+      gap: 25px;
+    }
+
+    &__item {
+      flex: 0 0 45%;
+    }
+  }
+}
+
+@include media($mobile) {
+  .layout {
+    &__items {
+      gap: 2rem;
+    }
+
+    &__item {
+      flex: 0 0 100%;
+    }
+
+    &__item_last-card {
+      width: 100%;
+      min-height: 500px;
+    }
+  }
+}

@@ -18,12 +18,11 @@
     // display: flex;
     flex-direction: column;
     justify-content: end;
-    padding: 0 12rem 10rem;
+    padding: 20rem 12rem 10rem;
     border-radius: 2.5rem;
-    aspect-ratio: 1690 / 760;
+    // aspect-ratio: 1690 / 760;
     // height: 760px;
-    background-repeat: no-repeat;
-    background-size: 100%;
+    background: no-repeat;
   }
 
   &__title {
@@ -72,6 +71,7 @@
     //   background: #ffffff;
     //   color: #000;
     // }
+    // margin-bottom: 70px;
 
     &_color_not-main {
       //   background: none;
@@ -117,17 +117,12 @@
     left: 20%;
     right: 20%;
   }
+}
 
-  // Окрашивание неактивных навигационных точек
-  .uk-dotnav > * > * {
-    width: 15px;
-    height: 15px;
-    border: none;
-    background-color: $white;
-  }
+@include media($tablet) {
 
-  // Окрашивание активной навигационной точки
-  .uk-light .uk-dotnav > .uk-active > * {
-    background-color: $baseColor;
-  }
+}
+
+@include media($mobile) {
+
 }

@@ -23,14 +23,14 @@
 
   &__items {
     gap: 27px;
-    width: 100%;
+    // width: 100%;
     justify-content: center;
   }
   &__item {
     border-radius: 30px;
     aspect-ratio: 340 / 450;
-    max-height: 450px;
-    max-width: 340px;
+    // max-height: 450px;
+    // max-width: 340px;
 
     padding: 32px;
     display: flex;
@@ -69,5 +69,48 @@
   .uk-light a {
     color: $btnColor;
     text-decoration: none;
+  }
+
+  &__btn-nav {
+    display: none;
+
+    &_next {
+    }
+
+    &_previous {
+    }
+  }
+}
+
+@include media(1000) {
+  .slider-mini {
+    &__items {
+      justify-content: start;
+      gap: 100px;
+    }
+    &__item {
+      margin: 0 10%;
+      width: 80%;
+    }
+
+    &__btn-item {
+      padding: 16px 8px;
+      width: 50%;
+    }
+
+    &__btn-nav {
+      display: block;
+    }
+  }
+}
+
+@include media($mobile) {
+  .slider-mini {
+    &__title {
+      font-size: 3.5rem;
+    }
+    &__title-item {
+      font-size: 1.5rem;
+    }
   }
 }

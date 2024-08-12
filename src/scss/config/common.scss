@@ -2,14 +2,26 @@
 .span-color {
   color: $baseColor;
 }
-
-.uk-svg,
-.uk-svg:not(.uk-preserve) [fill*="#"]:not(.uk-preserve) {
-  fill: auto;
-}
+// .uk-svg,
+// .uk-svg:not(.uk-preserve) [fill*="#"]:not(.uk-preserve) {
+//   fill:  !important;
+// }
 
 .uk-accordion-title {
   color: $textColor;
+}
+
+// Окрашивание неактивных навигационных точек
+.slider .uk-dotnav > * > * {
+  width: 15px;
+  height: 15px;
+  border: none;
+  background-color: $white;
+}
+
+// Окрашивание активной навигационной точки
+.slider .uk-light .uk-dotnav > .uk-active > * {
+  background-color: $baseColor;
 }
 
 //   .uk-dotnav>.uk-active>* {
@@ -35,7 +47,7 @@
 //     }
 
 //     &_min {
-//         font-size: 1.3rrem;
+//         font-size: 1.3rem;
 //     }
 
 //     &_minheight {

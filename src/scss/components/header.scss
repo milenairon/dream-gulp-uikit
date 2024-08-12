@@ -5,23 +5,11 @@
     #b8914d 49.4%,
     #c9a464 100%
   );
-  // // Окрашивание svg-картинок
-  // & .button_size_l &__button-image path {
-  //   fill: none !important;
-  // }
-
-  // & .button_size_l &__button-image path {
-  //   stroke: $baseColor !important;
-  // }
-
-  // & .button_size_s &__button-image rect {
-  //   fill: $baseColor !important;
-  // }
 
   // Окрашивание кнопок Если слетело .uk-svg(fill: auto)
-  & .button_size_l &__button-image path {
-    fill: none !important;
-  }
+  //   & .button_size_l &__button-image path {
+  //     fill: none !important;
+  //   }
 
   & .button_size_l &__button-image path {
     stroke: $baseColor !important;
@@ -261,4 +249,11 @@
     //         align-items: center;
     //     }
   }
+}
+@include media($tablet) {
+
+}
+
+@include media($mobile) {
+
 }

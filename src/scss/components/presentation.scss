@@ -63,3 +63,14 @@
     // }
   }
 }
+@include media($tablet) {
+}
+
+@include media($mobile) {
+  .presentation {
+    &__btn {
+      font-size: 2rem;
+      padding: 20px 45px;
+    }
+  }
+}

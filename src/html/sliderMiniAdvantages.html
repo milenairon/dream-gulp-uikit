@@ -1,57 +1,87 @@
 <section class="slider-mini" uk-slider>
   <div class="slider-mini__container container container_vertical">
-  <h2 class="slider-mini__title text_bold">
-    Преимущества жизни в <span class="span-color">ЖК «Мечта»</span>
-  </h2>
-  <!-- uk-light - Чтобы адаптировать содержимое для лучшей видимости на каждом изображении -->
-  <!-- uk-visible-toggle -  -->
-  <div
-    class="slider-mini__box uk-position-relative uk-visible-toggle uk-light"
-    tabindex="-1"
-  >
-    <!-- uk-child-width-1-1@s - количество слайдов на странице -->
-    <ul
-      class="slider-mini__items uk-slider-items uk-child-width-1-4 uk-child-width-1-4@s uk-child-width-1-4@m"
+    <h2 class="slider-mini__title text_huge text_bold">
+      Преимущества жизни в <span class="span-color">ЖК «Мечта»</span>
+    </h2>
+    <!-- uk-light - Чтобы адаптировать содержимое для лучшей видимости на каждом изображении -->
+    <!-- uk-visible-toggle -  -->
+    <div
+      class="slider-mini__box uk-position-relative uk-visible-toggle uk-light"
+      tabindex="-1"
     >
-      <li
-        class="slider-mini__item uk-slider-item"
-        style="
-          background-image: url(@img/slider-mini/slidePlaceAadvantages-1.jpg);
-        "
+      <!-- uk-child-width-1-1@s - количество слайдов на странице -->
+       
+      <ul
+        class="slider-mini__items uk-slider-items uk-child-width-1-1 uk-child-width-1-4@m"
       >
-        <h2 class="slider-mini__title-item text_bold">Современные таунхаусы</h2>
-        <a class="slider-mini__btn-item btn text" href="#">Узнать подробнее</a>
-      </li>
-      <li
-        class="slider-mini__item uk-slider-item"
-        style="
-          background-image: url(@img/slider-mini/slidePlaceAadvantages-2.png);
-        "
-      >
-        <h2 class="slider-mini__title-item text_bold">Спортивные и детские площадки</h2>
-        <a class="slider-mini__btn-item btn text" href="#">Узнать подробнее</a>
-      </li>
-      <li
-        class="slider-mini__item uk-slider-item"
-        style="
-          background-image: url(@img/slider-mini/slidePlaceAadvantages-3.jpg);
-        "
-      >
-        <h2 class="slider-mini__title-item text_bold">Много пространства между домами</h2>
-        <a class="slider-mini__btn-item btn text" href="#">Узнать подробнее</a>
-      </li>
-      <li
-        class="slider-mini__item uk-slider-item"
-        style="
-          background-image: url(@img/slider-mini/slidePlaceAadvantages-4.jpg);
-        "
-      >
-        <h2 class="slider-mini__title-item text_bold">
-          Тематическое озеленение каждой улицы, зеленые газоны, живая изгородь
-        </h2>
-        <a class="slider-mini__btn-item btn text" href="#">Узнать подробнее</a>
-      </li>
-    </ul>
-  </div>
+        <li
+          class="slider-mini__item uk-slider-item"
+          style="
+            background-image: url(@img/slider-mini/slidePlaceAadvantages-1.jpg);
+          "
+        >
+          <h2 class="slider-mini__title-item text_bold">
+            Современные таунхаусы
+          </h2>
+          <a class="slider-mini__btn-item btn text" href="#"
+            >Узнать подробнее</a
+          >
+        </li>
+        <li
+          class="slider-mini__item uk-slider-item"
+          style="
+            background-image: url(@img/slider-mini/slidePlaceAadvantages-2.png);
+          "
+        >
+          <h2 class="slider-mini__title-item text_bold">
+            Спортивные и детские площадки
+          </h2>
+          <a class="slider-mini__btn-item btn text" href="#"
+            >Узнать подробнее</a
+          >
+        </li>
+        <li
+          class="slider-mini__item uk-slider-item"
+          style="
+            background-image: url(@img/slider-mini/slidePlaceAadvantages-3.jpg);
+          "
+        >
+          <h2 class="slider-mini__title-item text_bold">
+            Много пространства между домами
+          </h2>
+          <a class="slider-mini__btn-item btn text" href="#"
+            >Узнать подробнее</a
+          >
+        </li>
+        <li
+          class="slider-mini__item uk-slider-item"
+          style="
+            background-image: url(@img/slider-mini/slidePlaceAadvantages-4.jpg);
+          "
+        >
+          <h2 class="slider-mini__title-item text_bold">
+            Тематическое озеленение каждой улицы, зеленые газоны, живая изгородь
+          </h2>
+          <a class="slider-mini__btn-item btn text" href="#"
+            >Узнать подробнее</a
+          >
+        </li>
+      </ul>
+    </div>
+    <!-- Кнопки по бокам -->
+    <div class="slider-mini__nav-btn" uk-svg>
+        <a
+          class="slider-mini__btn-nav_next uk-position-center-right uk-position-small"
+          href
+          uk-slidenav-next
+          uk-slider-item="next"
+        ></a>
+        <a
+          class="slider-mini__btn-nav_previous uk-position-center-left uk-position-small"
+          href
+          uk-slidenav-previous
+          uk-slider-item="previous"
+        ></a>
+      </div>
   </div>
 </section>

@@ -19,7 +19,7 @@
     // margin: 100px auto 0;
     padding: 100px;
   }
-  
+
   &__text {
     // font-weight: 400;
     text-align: center;
@@ -37,5 +37,18 @@
     // border-radius: 10px;
     // color: $btnColor;
     // padding: 1rem 2prem;
+  }
+}
+
+@include media($tablet) {
+}
+
+@include media($mobile) {
+  .gallery {
+    &__content {
+      min-height: 500px;
+      padding: 50px 25px;
+      gap: 30px;
+    }
   }
 }

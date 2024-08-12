@@ -2,13 +2,13 @@
 .button {
   color: $textColor;
   &_size_s {
-    width: 62px;
-    border-radius: 5px;
+    width: 60px;
+    // border-radius: 5px;
   }
 
   &_size_l {
-    width: 224px;
-    border-radius: 8px;
+    width: 220px;
+    // border-radius: 8px;
     gap: 1.5rem;
   }
 }

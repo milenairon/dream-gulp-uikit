@@ -54,6 +54,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 0 15px;
   }
 
   &__box {
@@ -75,6 +76,7 @@
   }
 
   &__input {
+    width: 100%;
     // font-weight: 400;
     font-size: 1.7rem;
     // line-height: 24px;
@@ -117,5 +119,37 @@
     accent-color: $textColorLight;
     width: 19px;
     height: 20px;
+  }
+}
+@include media($tablet) {
+  .contacts {
+    background-image: none;
+  }
+}
+
+@include media($mobile) {
+  .contacts {
+    &__content {
+    }
+    
+    &__title {
+      font-size: 40px;
+    }
+    &__box {
+      flex-direction: column;
+      flex-wrap: wrap;
+      gap: 15px;
+      width: 100%;
+    }
+    &__form {
+      padding: 0px 15px;
+      width: 100%;
+    }
+    &__input {
+      width: 100%;
+    }
+    &__button {
+      padding: 20px 15px;
+    }
   }
 }

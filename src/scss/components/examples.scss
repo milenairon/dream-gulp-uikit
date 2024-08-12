@@ -126,12 +126,47 @@
   }
 
   &__btn-item {
-    background-image: url("@img/examples/btn.svg");
+    background: url("@img/examples/btn.svg") no-repeat center / cover;
     // width: 67px;
     // height: 67px;
 
     &:hover {
       filter: grayscale(100%);
+    }
+  }
+}
+
+@include media($tablet) {
+  .examples {
+    &__items {
+    //   height: auto;
+      padding: 20px;
+    }
+    &__hidden-text-item {
+      opacity: 1;
+    }
+  }
+}
+
+@include media($mobile) {
+  .examples {
+    &__items {
+      height: auto;
+      flex-direction: column;
+    }
+
+    &__item {
+      flex: 0 0 100%;
+    }
+    &__title-item {
+      margin: 0 0 20px;
+    }
+    &__box-text-item {
+      padding: 20px;
+    }
+
+    &__hidden-text-item {
+      opacity: 1;
     }
   }
 }

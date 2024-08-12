@@ -4,17 +4,17 @@
   //---------------------------------------------------------------------------------
 
   // Окрашивание svg-картинок Если слетело .uk-svg(fill: auto)
-  & .button_size_l &__button-image path {
-    fill: none !important;
-  }
+  //   & .button_size_l &__button-image path {
+  //     fill: none !important;
+  //   }
 
-  & .button_size_l &__button-image path {
-    stroke: $textColor !important;
-  }
+  //   & .button_size_l &__button-image path {
+  //     stroke: $textColor !important;
+  //   }
 
-  & .button_size_s &__button-image rect {
-    fill: $textColor !important;
-  }
+  //   & .button_size_s &__button-image rect {
+  //     fill: $textColor !important;
+  //   }
 
   // margin-top: 100px;
 
@@ -108,7 +108,7 @@
     flex-direction: column;
     gap: 23px;
     margin: 0; // +
-    padding-left: 0; // +
+    padding: 0 10px;
     list-style-type: none; // +
     &_left {
       grid-area: s;
@@ -157,4 +157,11 @@
     justify-content: space-between;
     flex-wrap: nowrap;
   }
+}
+@include media($tablet) {
+
+}
+
+@include media($mobile) {
+
 }

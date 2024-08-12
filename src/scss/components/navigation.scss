@@ -28,8 +28,11 @@
   }
 }
 
-@include media($mobile) {
+@include media($tablet) {
   .navigation {
     display: none;
   }
+}
+
+@include media($mobile) {
 }
