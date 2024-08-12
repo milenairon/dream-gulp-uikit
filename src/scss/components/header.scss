@@ -102,6 +102,7 @@
     flex-direction: column;
     gap: 11px;
     align-items: end;
+    align-self: end;
   }
 
   &__phone {
@@ -173,52 +174,50 @@
 }
 // ------------------------------------------------------------------------
 .burger-menu {
-    &__items {
-        display: flex;
-        flex-direction: column;
-        text-transform: uppercase;
-        padding: 100px 20px 20px;
-        margin: 0;
-        background: $bodyColor;
-        margin-bottom: auto;
-    }
+  &__items {
+    display: flex;
+    flex-direction: column;
+    text-transform: uppercase;
+    padding: 100px 20px 20px;
+    margin: 0;
+    background: $bodyColor;
+    margin-bottom: auto;
+  }
 
-    &__item {
-        display: flex;
-        justify-content: center;
-        padding: 10px 0px;
-        border-bottom: 1px solid $borderColor;
-        list-style-type: none;
+  &__item {
+    display: flex;
+    justify-content: center;
+    padding: 10px 0px;
+    border-bottom: 1px solid $borderColor;
+    list-style-type: none;
 
-        &_text {
-            text-align: center;
-        }
+    &_text {
+      text-align: center;
     }
+  }
 
-    &__btn {
-        width: 100%;
-    }
+  &__btn {
+    width: 100%;
+  }
 
-    &__link {
-        color: $textColorDark;
-    }
+  &__link {
+    color: $textColorDark;
+  }
 
-    &__text {
-        color: $textColorDark;
-        font-size: 1.5rem;
-    }
+  &__text {
+    color: $textColorDark;
+  }
 
-    &__social-btns {
-        
-        justify-content: space-between;
-    }
+  &__social-btns {
+    justify-content: space-between;
+  }
 
-    .header__social-btn {
-        flex: 0 0 45%;
-    }
+  .header__social-btn {
+    flex: 0 0 45%;
+  }
 }
 // ------------------------------------------------------------------------
-@include media($mobile) {
+@include media($tablet) {
   .burger {
     display: block;
   }
@@ -233,6 +232,19 @@
     &__button-items {
       display: none;
     }
+    &__box-contacts {
+      padding: 0 10px 0 0;
+      flex: 0 0 30%;
+    }
+
+    &__phone,
+    &__city {
+      margin: 0; // +
+      // font-weight: 700;
+      font-size: 2rem;
+      // line-height: 43px;
+      color: $textColorLight;
+    }
 
     //     &__top {
     //         padding: 20px 0px;
@@ -243,21 +255,10 @@
     //         flex: unset;
     //     }
 
-    //     &__desr {
-    //         display: none;
-    //     }
-
-    //     &__btns-wrapper {
-    //         display: none;
-    //     }
+    //
 
     //     &__contacts-wrapper {
     //         align-items: center;
     //     }
-
-    //     &__menu-container {
-    //         display: none;
-    //     }
   }
 }
-

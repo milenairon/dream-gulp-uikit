@@ -12,7 +12,6 @@ html {
   font-size: 12px;
 }
 
-
 body {
   background-color: $bodyColor;
   overflow-y: hidden;
@@ -291,48 +290,48 @@ textarea {
   }
 }
 
-// .popup {
-//     z-index: 1050;
-//     text-align: center;
+.popup {
+  z-index: 1050;
+  text-align: center;
 
-//     &__frame {
-//         border-radius: 5px;
-//         width: 700px;
-//     }
-// }
-
-@include media($tablet) {
-  html {
-    font-size: 11px;
+  &__frame {
+    border-radius: 5px;
+    width: 700px;
   }
 }
 
-@include media($mobile) {
+@include media($tablet) {
   html {
     font-size: 10px;
   }
 }
 
-.noUi-handle{
+@include media($mobile) {
+  html {
+    font-size: 8px;
+  }
+}
+
+.noUi-handle {
   width: 25px !important;
   height: 25px !important;
   border-radius: 50px !important;
   background: $frameColor !important;
   box-shadow: none !important;
 }
-.noUi-horizontal{
+.noUi-horizontal {
   height: 4px !important;
 }
-.noUi-handle::after{
+.noUi-handle::after {
   content: none !important;
 }
-.noUi-handle::before{
+.noUi-handle::before {
   content: none !important;
 }
-.noUi-target{
-  background: #D3D3D3 !important;
+.noUi-target {
+  background: #d3d3d3 !important;
   box-shadow: none !important;
 }
-.noUi-horizontal .noUi-handle{
+.noUi-horizontal .noUi-handle {
   top: -10px !important;
 }
